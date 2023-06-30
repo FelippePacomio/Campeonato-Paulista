@@ -15,80 +15,17 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class Oitavas extends javax.swing.JFrame {
 
     ArrayList<Time> times;
+    ImageIcon atleticosorocaba, botafogo, cotia, corinthians, ferroviaria, audax, guarani, interlimeira,
+            ituano, marilia, mirassol, oeste, palmeiras, pontepreta, bragantino, santoandre, santos, saobernardo, saocaetano,
+            saopaulo, piracicaba, aguasanta;
 
     public Oitavas() throws IOException {
-        BufferedImage img = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Atlético_Sorocaba-SP.png"));
-        BufferedImage img2 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Botafogo-SP.png"));
-        BufferedImage img3 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Corinthians-BRA.png"));
-        BufferedImage img4 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Ferroviária-SP.png"));
-        BufferedImage img5 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Grêmio_Osasco_Audax-SP.png"));
-        BufferedImage img6 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Guarani-SP.png"));
-        BufferedImage img7 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Inter de Limeira-SP HD.png"));
-        BufferedImage img8 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Ituano.png"));
-        BufferedImage img9 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Marília HD_SP.png"));
-        BufferedImage img10 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Mirassol-SP HD.png"));
-        BufferedImage img11 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Oeste-SP.png"));
-        BufferedImage img12 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Palmeiras-BRA.png"));
-        BufferedImage img13 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Ponte Preta HD-SP.png"));
-        BufferedImage img14 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Red Bull Bragantino (HD).png"));
-        BufferedImage img15 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Santo André-SP HD.png"));
-        BufferedImage img16 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Santos-SP.png"));
-        BufferedImage img17 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\São Bernardo-SP HD.png"));
-        BufferedImage img18 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\São Caetano-BRA.png"));
-        BufferedImage img19 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\São Paulo_SP.png"));
-        BufferedImage img20 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\XV de Piracicaba-SP HD.png"));
-        BufferedImage img21 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Água Santa-SP.png"));
-        BufferedImage img22 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Cotia-SP.png"));
-        ImageIcon atleticosorocaba = new ImageIcon(img);
-        ImageIcon botafogo = new ImageIcon(img2);
-        ImageIcon cotia = new ImageIcon(img22);
-        ImageIcon corinthians = new ImageIcon(img3);
-        ImageIcon ferroviaria = new ImageIcon(img4);
-        ImageIcon audax = new ImageIcon(img5);
-        ImageIcon guarani = new ImageIcon(img6);
-        ImageIcon interlimeira = new ImageIcon(img7);
-        ImageIcon ituano = new ImageIcon(img8);
-        ImageIcon marilia = new ImageIcon(img9);
-        ImageIcon mirassol = new ImageIcon(img10);
-        ImageIcon oeste = new ImageIcon(img11);
-        ImageIcon palmeiras = new ImageIcon(img12);
-        ImageIcon pontepreta = new ImageIcon(img13);
-        ImageIcon bragantino = new ImageIcon(img14);
-        ImageIcon santoandre = new ImageIcon(img15);
-        ImageIcon santos = new ImageIcon(img16);
-        ImageIcon saobernardo = new ImageIcon(img17);
-        ImageIcon saocaetano = new ImageIcon(img18);
-        ImageIcon saopaulo = new ImageIcon(img19);
-        ImageIcon piracicaba = new ImageIcon(img20);
-        ImageIcon aguasanta = new ImageIcon(img21);
-        times = new ArrayList();
-        times.add(new Time("Atlético Sorocaba", atleticosorocaba));
-        times.add(new Time("Botafogo-SP", botafogo));
-        times.add(new Time("Cotia", cotia));
-        times.add(new Time("Corinthians", corinthians));
-        times.add(new Time("Ferroviária", ferroviaria));
-        times.add(new Time("Audax", audax));
-        times.add(new Time("Guarani", guarani));
-        times.add(new Time("Inter de Limeira", interlimeira));
-        times.add(new Time("Ituano", ituano));
-        times.add(new Time("Marília-SP", marilia));
-        times.add(new Time("Mirassol", mirassol));
-        times.add(new Time("Oeste", oeste));
-        times.add(new Time("Palmeiras", palmeiras));
-        times.add(new Time("Ponte Preta", pontepreta));
-        times.add(new Time("Red Bull Bragantino", bragantino));
-        times.add(new Time("Santo André", santoandre));
-        times.add(new Time("Santos", santos));
-        times.add(new Time("São Bernardo", saobernardo));
-        times.add(new Time("São Caetano", saocaetano));
-        times.add(new Time("São Paulo", saopaulo));
-        times.add(new Time("XV de Piracicaba", piracicaba));
-        times.add(new Time("Água Santa", aguasanta));
-        Collections.shuffle(times);
+        lerEscudos();
         initComponents();
         timeAleatorio();
     }
@@ -151,7 +88,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
@@ -182,7 +119,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2);
@@ -213,7 +150,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel3);
@@ -244,7 +181,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel4);
@@ -275,7 +212,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(jLabel10))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel5);
@@ -306,7 +243,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jLabel12))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel6);
@@ -337,7 +274,7 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(jLabel14))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel7);
@@ -368,119 +305,163 @@ public class Oitavas extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
                     .addComponent(jLabel16))
-                .addContainerGap(578, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel8);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    public void timeAleatorio() {
+    private void lerEscudos() throws IOException {
+        BufferedImage img = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Atlético_Sorocaba-SP.png"));
+        BufferedImage img2 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Botafogo-SP.png"));
+        BufferedImage img3 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Corinthians-BRA.png"));
+        BufferedImage img4 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Ferroviária-SP.png"));
+        BufferedImage img5 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Grêmio_Osasco_Audax-SP.png"));
+        BufferedImage img6 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Guarani-SP.png"));
+        BufferedImage img7 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Inter de Limeira-SP HD.png"));
+        BufferedImage img8 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Ituano.png"));
+        BufferedImage img9 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Marília HD_SP.png"));
+        BufferedImage img10 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Mirassol-SP HD.png"));
+        BufferedImage img11 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Oeste-SP.png"));
+        BufferedImage img12 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Palmeiras-BRA.png"));
+        BufferedImage img13 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Ponte Preta HD-SP.png"));
+        BufferedImage img14 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Red Bull Bragantino (HD).png"));
+        BufferedImage img15 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Santo André-SP HD.png"));
+        BufferedImage img16 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Santos-SP.png"));
+        BufferedImage img17 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\São Bernardo-SP HD.png"));
+        BufferedImage img18 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\São Caetano-BRA.png"));
+        BufferedImage img19 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\São Paulo_SP.png"));
+        BufferedImage img20 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\XV de Piracicaba-SP HD.png"));
+        BufferedImage img21 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Água Santa-SP.png"));
+        BufferedImage img22 = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Cotia-SP.png"));
+        atleticosorocaba = new ImageIcon(img);
+        botafogo = new ImageIcon(img2);
+        cotia = new ImageIcon(img22);
+        corinthians = new ImageIcon(img3);
+        ferroviaria = new ImageIcon(img4);
+        audax = new ImageIcon(img5);
+        guarani = new ImageIcon(img6);
+        interlimeira = new ImageIcon(img7);
+        ituano = new ImageIcon(img8);
+        marilia = new ImageIcon(img9);
+        mirassol = new ImageIcon(img10);
+        oeste = new ImageIcon(img11);
+        palmeiras = new ImageIcon(img12);
+        pontepreta = new ImageIcon(img13);
+        bragantino = new ImageIcon(img14);
+        santoandre = new ImageIcon(img15);
+        santos = new ImageIcon(img16);
+        saobernardo = new ImageIcon(img17);
+        saocaetano = new ImageIcon(img18);
+        saopaulo = new ImageIcon(img19);
+        piracicaba = new ImageIcon(img20);
+        aguasanta = new ImageIcon(img21);
+        criarTimes();
+    }
+
+    private void criarTimes() throws IOException {
+        times = new ArrayList();
+        times.add(new Time("Atlético Sorocaba", atleticosorocaba));
+        times.add(new Time("Botafogo-SP", botafogo));
+        times.add(new Time("Cotia", cotia));
+        times.add(new Time("Corinthians", corinthians));
+        times.add(new Time("Ferroviária", ferroviaria));
+        times.add(new Time("Audax", audax));
+        times.add(new Time("Guarani", guarani));
+        times.add(new Time("Inter de Limeira", interlimeira));
+        times.add(new Time("Ituano", ituano));
+        times.add(new Time("Marília-SP", marilia));
+        times.add(new Time("Mirassol", mirassol));
+        times.add(new Time("Oeste", oeste));
+        times.add(new Time("Palmeiras", palmeiras));
+        times.add(new Time("Ponte Preta", pontepreta));
+        times.add(new Time("Red Bull Bragantino", bragantino));
+        times.add(new Time("Santo André", santoandre));
+        times.add(new Time("Santos", santos));
+        times.add(new Time("São Bernardo", saobernardo));
+        times.add(new Time("São Caetano", saocaetano));
+        times.add(new Time("São Paulo", saopaulo));
+        times.add(new Time("XV de Piracicaba", piracicaba));
+        times.add(new Time("Água Santa", aguasanta));
+        Collections.shuffle(times);
+    }
+
+    private void timeAleatorio() {
         Random random = new Random();
         List<Integer> indicesSelecionados = new ArrayList<>();
-        JLabel[] jLabels = new JLabel[16];
-
-        for (int i = 0; i < 16; i++) {
-            jLabels[i] = new JLabel();
-        }
 
         for (int i = 0; i < 16; i++) {
             int indiceAleatorio;
-           do {
+            do {
                 indiceAleatorio = random.nextInt(times.size());
             } while (indicesSelecionados.contains(indiceAleatorio));
 
             indicesSelecionados.add(indiceAleatorio);
-
-            times.get(indiceAleatorio);
-            jLabels[i].setText(times.get(indiceAleatorio).getNome());
-            jLabels[i].setIcon(times.get(indiceAleatorio).getEmblema());
-            jLabels[i].repaint();
         }
 
-        /*int indiceAleatorio2 = random.nextInt(times.size());
-        Time time2 = times.get(indiceAleatorio2);
-        jLabel2.setText(time2.getNome());
-        jLabel2.setIcon(time2.getEmblema());
-
-        int indiceAleatorio3 = random.nextInt(times.size());
-        Time time3 = times.get(indiceAleatorio3);
-        jLabel3.setText(time3.getNome());
-        jLabel3.setIcon(time3.getEmblema());
-
-        int indiceAleatorio4 = random.nextInt(times.size());
-        Time time4 = times.get(indiceAleatorio4);
-        jLabel4.setText(time4.getNome());
-        jLabel4.setIcon(time4.getEmblema());
-
-        int indiceAleatorio5 = random.nextInt(times.size());
-        Time time5 = times.get(indiceAleatorio5);
-        jLabel5.setText(time5.getNome());
-        jLabel5.setIcon(time5.getEmblema());
-
-        int indiceAleatorio6 = random.nextInt(times.size());
-        Time time6 = times.get(indiceAleatorio6);
-        jLabel6.setText(time6.getNome());
-        jLabel6.setIcon(time6.getEmblema());
-
-        int indiceAleatorio7 = random.nextInt(times.size());
-        Time time7 = times.get(indiceAleatorio7);
-        jLabel7.setText(time7.getNome());
-        jLabel7.setIcon(time7.getEmblema());
-
-        int indiceAleatorio8 = random.nextInt(times.size());
-        Time time8 = times.get(indiceAleatorio8);
-        jLabel8.setText(time8.getNome());
-        jLabel8.setIcon(time8.getEmblema());
-
-        int indiceAleatorio9 = random.nextInt(times.size());
-        Time time9 = times.get(indiceAleatorio9);
-        jLabel9.setText(time9.getNome());
-        jLabel9.setIcon(time9.getEmblema());
-
-        int indiceAleatorio10 = random.nextInt(times.size());
-        Time time10 = times.get(indiceAleatorio10);
-        jLabel10.setText(time10.getNome());
-        jLabel10.setIcon(time10.getEmblema());
-
-        int indiceAleatorio11 = random.nextInt(times.size());
-        Time time11 = times.get(indiceAleatorio11);
-        jLabel11.setText(time11.getNome());
-        jLabel11.setIcon(time11.getEmblema());
-
-        int indiceAleatorio12 = random.nextInt(times.size());
-        Time time12 = times.get(indiceAleatorio12);
-        jLabel12.setText(time12.getNome());
-        jLabel12.setIcon(time12.getEmblema());
-
-        int indiceAleatorio13 = random.nextInt(times.size());
-        Time time13 = times.get(indiceAleatorio13);
-        jLabel13.setText(time13.getNome());
-        jLabel13.setIcon(time13.getEmblema());
-
-        int indiceAleatorio14 = random.nextInt(times.size());
-        Time time14 = times.get(indiceAleatorio14);
-        jLabel14.setText(time14.getNome());
-        jLabel14.setIcon(time14.getEmblema());
-
-        int indiceAleatorio15 = random.nextInt(times.size());
-        Time time15 = times.get(indiceAleatorio15);
-        jLabel15.setText(time15.getNome());
-        jLabel15.setIcon(time15.getEmblema());
-
-        int indiceAleatorio16 = random.nextInt(times.size());
-        Time time16 = times.get(indiceAleatorio16);
-        jLabel16.setText(time16.getNome());
-        jLabel16.setIcon(time16.getEmblema());
-*/
+        jLabel1.setIcon(times.get(indicesSelecionados.get(0)).getEmblema());
+        jLabel1.setText(times.get(indicesSelecionados.get(0)).getNome());
+        jLabel2.setIcon(times.get(indicesSelecionados.get(1)).getEmblema());
+        jLabel2.setText(times.get(indicesSelecionados.get(1)).getNome());
+        jLabel3.setIcon(times.get(indicesSelecionados.get(2)).getEmblema());
+        jLabel3.setText(times.get(indicesSelecionados.get(2)).getNome());
+        jLabel4.setIcon(times.get(indicesSelecionados.get(3)).getEmblema());
+        jLabel4.setText(times.get(indicesSelecionados.get(3)).getNome());
+        jLabel5.setIcon(times.get(indicesSelecionados.get(4)).getEmblema());
+        jLabel5.setText(times.get(indicesSelecionados.get(4)).getNome());
+        jLabel6.setIcon(times.get(indicesSelecionados.get(5)).getEmblema());
+        jLabel6.setText(times.get(indicesSelecionados.get(5)).getNome());
+        jLabel7.setIcon(times.get(indicesSelecionados.get(6)).getEmblema());
+        jLabel7.setText(times.get(indicesSelecionados.get(6)).getNome());
+        jLabel8.setIcon(times.get(indicesSelecionados.get(7)).getEmblema());
+        jLabel8.setText(times.get(indicesSelecionados.get(7)).getNome());
+        jLabel9.setIcon(times.get(indicesSelecionados.get(8)).getEmblema());
+        jLabel9.setText(times.get(indicesSelecionados.get(8)).getNome());
+        jLabel10.setIcon(times.get(indicesSelecionados.get(9)).getEmblema());
+        jLabel10.setText(times.get(indicesSelecionados.get(9)).getNome());
+        jLabel11.setIcon(times.get(indicesSelecionados.get(10)).getEmblema());
+        jLabel11.setText(times.get(indicesSelecionados.get(10)).getNome());
+        jLabel12.setIcon(times.get(indicesSelecionados.get(11)).getEmblema());
+        jLabel12.setText(times.get(indicesSelecionados.get(11)).getNome());
+        jLabel13.setIcon(times.get(indicesSelecionados.get(12)).getEmblema());
+        jLabel13.setText(times.get(indicesSelecionados.get(12)).getNome());
+        jLabel14.setIcon(times.get(indicesSelecionados.get(13)).getEmblema());
+        jLabel14.setText(times.get(indicesSelecionados.get(13)).getNome());
+        jLabel15.setIcon(times.get(indicesSelecionados.get(14)).getEmblema());
+        jLabel15.setText(times.get(indicesSelecionados.get(14)).getNome());
+        jLabel16.setIcon(times.get(indicesSelecionados.get(15)).getEmblema());
+        jLabel16.setText(times.get(indicesSelecionados.get(15)).getNome());
+        placarAleatorio();
     }
 
     public void placarAleatorio() {
         Random random = new Random();
-        for (int i = 0; i < 4; i++) {
-
+        List<Integer> placarVisitante = new ArrayList<>();
+        List<Integer> placarCasa = new ArrayList<>();
+        for (int i = 0; i < 8; i++) {
+            placarVisitante.add(random.nextInt(5));
+            placarCasa.add(random.nextInt(5));
         }
+      //  jLabel4.setText(String.valueOf(placarVisitante.get(0)));
+       // jLabel3.setText(String.valueOf(placarCasa.get(0)));
+        // jLabel20.setText(String.valueOf(placarVisitante.get(1)));
+        // jLabel21.setText(String.valueOf(placarCasa.get(1)));
+        // jLabel23.setText(String.valueOf(placarVisitante.get(2)));
+        // jLabel24.setText(String.valueOf(placarCasa.get(2)));
+        // jLabel26.setText(String.valueOf(placarVisitante.get(3)));
+        //  jLabel27.setText(String.valueOf(placarCasa.get(3)));
+        // jLabel29.setText(String.valueOf(placarVisitante.get(4)));
+        //  jLabel30.setText(String.valueOf(placarCasa.get(4)));
+        //jLabel32.setText(String.valueOf(placarVisitante.get(5)));
+        // jLabel33.setText(String.valueOf(placarCasa.get(5)));
+        // jLabel38.setText(String.valueOf(placarVisitante.get(6)));
+        // jLabel40.setText(String.valueOf(placarCasa.get(6)));
+        //  jLabel38.setText(String.valueOf(placarVisitante.get(7)));
+        //  jLabel39.setText(String.valueOf(placarCasa.get(7)));
+
     }
 
     public static void main(String args[]) {
