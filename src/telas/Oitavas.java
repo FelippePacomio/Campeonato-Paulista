@@ -6,11 +6,15 @@ import campeonato.Time;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 public class Oitavas extends javax.swing.JFrame {
 
@@ -374,74 +378,102 @@ public class Oitavas extends javax.swing.JFrame {
 
     public void timeAleatorio() {
         Random random = new Random();
-        int numeroAnterior = -1;
+        List<Integer> indicesSelecionados = new ArrayList<>();
+        JLabel[] jLabels = new JLabel[16];
+
         for (int i = 0; i < 16; i++) {
-            
-            int indiceAleatorio = random.nextInt(times.size());
-            int indiceAleatorio2 = random.nextInt(times.size());
-            int indiceAleatorio3 = random.nextInt(times.size());
-            int indiceAleatorio4 = random.nextInt(times.size());
-            int indiceAleatorio5 = random.nextInt(times.size());
-            int indiceAleatorio6 = random.nextInt(times.size());
-            int indiceAleatorio7 = random.nextInt(times.size());
-            int indiceAleatorio8 = random.nextInt(times.size());
-            int indiceAleatorio9 = random.nextInt(times.size());
-            int indiceAleatorio10 = random.nextInt(times.size());
-            int indiceAleatorio11 = random.nextInt(times.size());
-            int indiceAleatorio12 = random.nextInt(times.size());
-            int indiceAleatorio13 = random.nextInt(times.size());
-            int indiceAleatorio14 = random.nextInt(times.size());
-            int indiceAleatorio15 = random.nextInt(times.size());
-            int indiceAleatorio16 = random.nextInt(times.size());
-            Time time1 = times.get(indiceAleatorio);
-            Time time2 = times.get(indiceAleatorio2);
-            Time time3 = times.get(indiceAleatorio3);
-            Time time4 = times.get(indiceAleatorio4);
-            Time time5 = times.get(indiceAleatorio5);
-            Time time6 = times.get(indiceAleatorio6);
-            Time time7 = times.get(indiceAleatorio7);
-            Time time8 = times.get(indiceAleatorio8);
-            Time time9 = times.get(indiceAleatorio9);
-            Time time10 = times.get(indiceAleatorio10);
-            Time time11 = times.get(indiceAleatorio11);
-            Time time12 = times.get(indiceAleatorio12);
-            Time time13 = times.get(indiceAleatorio13);
-            Time time14 = times.get(indiceAleatorio14);
-            Time time15 = times.get(indiceAleatorio15);
-            Time time16 = times.get(indiceAleatorio16);
-            jLabel1.setText(time1.getNome());
-            jLabel1.setIcon(time1.getEmblema());
-            jLabel2.setText(time2.getNome());
-            jLabel2.setIcon(time2.getEmblema());
-            jLabel3.setText(time3.getNome());
-            jLabel3.setIcon(time3.getEmblema());
-            jLabel4.setText(time4.getNome());
-            jLabel4.setIcon(time4.getEmblema());
-            jLabel5.setText(time5.getNome());
-            jLabel5.setIcon(time5.getEmblema());
-            jLabel6.setText(time6.getNome());
-            jLabel6.setIcon(time6.getEmblema());
-            jLabel7.setText(time7.getNome());
-            jLabel7.setIcon(time7.getEmblema());
-            jLabel8.setText(time8.getNome());
-            jLabel8.setIcon(time8.getEmblema());
-            jLabel9.setText(time9.getNome());
-            jLabel9.setIcon(time9.getEmblema());
-            jLabel10.setText(time10.getNome());
-            jLabel10.setIcon(time10.getEmblema());
-            jLabel11.setText(time11.getNome());
-            jLabel11.setIcon(time11.getEmblema());
-            jLabel12.setText(time12.getNome());
-            jLabel12.setIcon(time12.getEmblema());
-            jLabel13.setText(time13.getNome());
-            jLabel13.setIcon(time13.getEmblema());
-            jLabel14.setText(time14.getNome());
-            jLabel14.setIcon(time14.getEmblema());
-            jLabel15.setText(time15.getNome());
-            jLabel15.setIcon(time15.getEmblema());
-            jLabel16.setText(time16.getNome());
-            jLabel16.setIcon(time16.getEmblema());
+            jLabels[i] = new JLabel();
         }
+
+        for (int i = 0; i < 16; i++) {
+            int indiceAleatorio;
+           do {
+                indiceAleatorio = random.nextInt(times.size());
+            } while (indicesSelecionados.contains(indiceAleatorio));
+
+            indicesSelecionados.add(indiceAleatorio);
+
+            times.get(indiceAleatorio);
+            jLabels[i].setText(times.get(indiceAleatorio).getNome());
+            jLabels[i].setIcon(times.get(indiceAleatorio).getEmblema());
+            jLabels[i].repaint();
+        }
+
+        /*int indiceAleatorio2 = random.nextInt(times.size());
+        Time time2 = times.get(indiceAleatorio2);
+        jLabel2.setText(time2.getNome());
+        jLabel2.setIcon(time2.getEmblema());
+
+        int indiceAleatorio3 = random.nextInt(times.size());
+        Time time3 = times.get(indiceAleatorio3);
+        jLabel3.setText(time3.getNome());
+        jLabel3.setIcon(time3.getEmblema());
+
+        int indiceAleatorio4 = random.nextInt(times.size());
+        Time time4 = times.get(indiceAleatorio4);
+        jLabel4.setText(time4.getNome());
+        jLabel4.setIcon(time4.getEmblema());
+
+        int indiceAleatorio5 = random.nextInt(times.size());
+        Time time5 = times.get(indiceAleatorio5);
+        jLabel5.setText(time5.getNome());
+        jLabel5.setIcon(time5.getEmblema());
+
+        int indiceAleatorio6 = random.nextInt(times.size());
+        Time time6 = times.get(indiceAleatorio6);
+        jLabel6.setText(time6.getNome());
+        jLabel6.setIcon(time6.getEmblema());
+
+        int indiceAleatorio7 = random.nextInt(times.size());
+        Time time7 = times.get(indiceAleatorio7);
+        jLabel7.setText(time7.getNome());
+        jLabel7.setIcon(time7.getEmblema());
+
+        int indiceAleatorio8 = random.nextInt(times.size());
+        Time time8 = times.get(indiceAleatorio8);
+        jLabel8.setText(time8.getNome());
+        jLabel8.setIcon(time8.getEmblema());
+
+        int indiceAleatorio9 = random.nextInt(times.size());
+        Time time9 = times.get(indiceAleatorio9);
+        jLabel9.setText(time9.getNome());
+        jLabel9.setIcon(time9.getEmblema());
+
+        int indiceAleatorio10 = random.nextInt(times.size());
+        Time time10 = times.get(indiceAleatorio10);
+        jLabel10.setText(time10.getNome());
+        jLabel10.setIcon(time10.getEmblema());
+
+        int indiceAleatorio11 = random.nextInt(times.size());
+        Time time11 = times.get(indiceAleatorio11);
+        jLabel11.setText(time11.getNome());
+        jLabel11.setIcon(time11.getEmblema());
+
+        int indiceAleatorio12 = random.nextInt(times.size());
+        Time time12 = times.get(indiceAleatorio12);
+        jLabel12.setText(time12.getNome());
+        jLabel12.setIcon(time12.getEmblema());
+
+        int indiceAleatorio13 = random.nextInt(times.size());
+        Time time13 = times.get(indiceAleatorio13);
+        jLabel13.setText(time13.getNome());
+        jLabel13.setIcon(time13.getEmblema());
+
+        int indiceAleatorio14 = random.nextInt(times.size());
+        Time time14 = times.get(indiceAleatorio14);
+        jLabel14.setText(time14.getNome());
+        jLabel14.setIcon(time14.getEmblema());
+
+        int indiceAleatorio15 = random.nextInt(times.size());
+        Time time15 = times.get(indiceAleatorio15);
+        jLabel15.setText(time15.getNome());
+        jLabel15.setIcon(time15.getEmblema());
+
+        int indiceAleatorio16 = random.nextInt(times.size());
+        Time time16 = times.get(indiceAleatorio16);
+        jLabel16.setText(time16.getNome());
+        jLabel16.setIcon(time16.getEmblema());
+*/
     }
 
     public void placarAleatorio() {
@@ -457,8 +489,10 @@ public class Oitavas extends javax.swing.JFrame {
             public void run() {
                 try {
                     new Oitavas().setVisible(true);
+
                 } catch (IOException ex) {
-                    Logger.getLogger(Oitavas.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Oitavas.class
+                            .getName()).log(Level.SEVERE, null, ex);
                 }
             }
         });
