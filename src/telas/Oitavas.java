@@ -8,6 +8,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -46,6 +47,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel34 = new javax.swing.JPanel();
         jPanel36 = new javax.swing.JPanel();
         jPanel35 = new javax.swing.JPanel();
+        jPanel68 = new javax.swing.JPanel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
@@ -58,6 +63,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel43 = new javax.swing.JPanel();
         jPanel44 = new javax.swing.JPanel();
         jPanel50 = new javax.swing.JPanel();
+        jPanel62 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -70,6 +79,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel37 = new javax.swing.JPanel();
         jPanel45 = new javax.swing.JPanel();
         jPanel51 = new javax.swing.JPanel();
+        jPanel60 = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -82,6 +95,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel38 = new javax.swing.JPanel();
         jPanel52 = new javax.swing.JPanel();
         jPanel57 = new javax.swing.JPanel();
+        jPanel67 = new javax.swing.JPanel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
@@ -94,6 +111,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel39 = new javax.swing.JPanel();
         jPanel46 = new javax.swing.JPanel();
         jPanel53 = new javax.swing.JPanel();
+        jPanel66 = new javax.swing.JPanel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
@@ -106,6 +127,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel40 = new javax.swing.JPanel();
         jPanel47 = new javax.swing.JPanel();
         jPanel54 = new javax.swing.JPanel();
+        jPanel65 = new javax.swing.JPanel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -118,6 +143,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel41 = new javax.swing.JPanel();
         jPanel48 = new javax.swing.JPanel();
         jPanel55 = new javax.swing.JPanel();
+        jPanel64 = new javax.swing.JPanel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
@@ -130,6 +159,10 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel42 = new javax.swing.JPanel();
         jPanel49 = new javax.swing.JPanel();
         jPanel56 = new javax.swing.JPanel();
+        jPanel63 = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jPanel58 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
@@ -294,6 +327,30 @@ public class Oitavas extends javax.swing.JFrame {
 
         jPanel1.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 48, 233, 8));
 
+        jPanel68.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel68.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel68.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel63.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel63.setText("PN");
+        jPanel68.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel64.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel64.setText("PN");
+        jPanel68.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel65.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel65.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel65.setText("PN");
+        jPanel68.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel1.add(jPanel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
+
         jLayeredPane1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 640, 1280, 80));
 
         jPanel2.setBackground(new java.awt.Color(87, 87, 87));
@@ -426,6 +483,30 @@ public class Oitavas extends javax.swing.JFrame {
         );
 
         jPanel2.add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
+
+        jPanel62.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel62.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel62.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel45.setText("PN");
+        jPanel62.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel46.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel46.setText("PN");
+        jPanel62.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel47.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel47.setText("PN");
+        jPanel62.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel2.add(jPanel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
 
         jLayeredPane1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 1280, 80));
 
@@ -560,6 +641,30 @@ public class Oitavas extends javax.swing.JFrame {
 
         jPanel3.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
 
+        jPanel60.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel60.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel60.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel42.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel42.setText("PN");
+        jPanel60.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel43.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel43.setText("PN");
+        jPanel60.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel44.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel44.setText("PN");
+        jPanel60.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel3.add(jPanel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
+
         jLayeredPane1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1280, 80));
 
         jPanel4.setBackground(new java.awt.Color(87, 87, 87));
@@ -692,6 +797,30 @@ public class Oitavas extends javax.swing.JFrame {
         );
 
         jPanel4.add(jPanel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 48, 233, 8));
+
+        jPanel67.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel67.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel67.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel60.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel60.setText("PN");
+        jPanel67.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel61.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel61.setText("PN");
+        jPanel67.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel62.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel62.setText("PN");
+        jPanel67.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel4.add(jPanel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
 
         jLayeredPane1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 1280, 80));
 
@@ -826,6 +955,30 @@ public class Oitavas extends javax.swing.JFrame {
 
         jPanel5.add(jPanel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
 
+        jPanel66.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel66.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel66.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel57.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel57.setText("PN");
+        jPanel66.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel58.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel58.setText("PN");
+        jPanel66.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel59.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel59.setText("PN");
+        jPanel66.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel5.add(jPanel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
+
         jLayeredPane1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 1280, 80));
 
         jPanel6.setBackground(new java.awt.Color(87, 87, 87));
@@ -959,6 +1112,30 @@ public class Oitavas extends javax.swing.JFrame {
 
         jPanel6.add(jPanel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
 
+        jPanel65.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel65.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel65.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel54.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel54.setText("PN");
+        jPanel65.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel55.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel55.setText("PN");
+        jPanel65.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel56.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel56.setText("PN");
+        jPanel65.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel6.add(jPanel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
+
         jLayeredPane1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 1280, 80));
 
         jPanel7.setBackground(new java.awt.Color(87, 87, 87));
@@ -1090,6 +1267,30 @@ public class Oitavas extends javax.swing.JFrame {
         );
 
         jPanel7.add(jPanel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
+
+        jPanel64.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel64.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel64.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel51.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel51.setText("PN");
+        jPanel64.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel52.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel52.setText("PN");
+        jPanel64.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel53.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel53.setText("PN");
+        jPanel64.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel7.add(jPanel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
 
         jLayeredPane1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 1280, 80));
 
@@ -1223,6 +1424,30 @@ public class Oitavas extends javax.swing.JFrame {
         );
 
         jPanel8.add(jPanel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
+
+        jPanel63.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel63.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel63.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel48.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel48.setText("PN");
+        jPanel63.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
+
+        jLabel49.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel49.setText("PN");
+        jPanel63.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
+
+        jLabel50.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel50.setText("PN");
+        jPanel63.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
+
+        jPanel8.add(jPanel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
 
         jLayeredPane1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 1280, 80));
 
@@ -1432,6 +1657,7 @@ public class Oitavas extends javax.swing.JFrame {
     }
 
     public void placarAleatorio() {
+
         Random random = new Random();
         List<Integer> placarVisitante = new ArrayList<>();
         List<Integer> placarCasa = new ArrayList<>();
@@ -1447,7 +1673,49 @@ public class Oitavas extends javax.swing.JFrame {
         jLabel22.setText(String.valueOf(placarVisitante.get(5)) + "    x    " + String.valueOf(placarCasa.get(5)));
         jLabel23.setText(String.valueOf(placarVisitante.get(6)) + "    x    " + String.valueOf(placarCasa.get(6)));
         jLabel24.setText(String.valueOf(placarVisitante.get(7)) + "    x    " + String.valueOf(placarCasa.get(7)));
+        jPanel60.setVisible(false);
+        jPanel62.setVisible(false);
+        jPanel63.setVisible(false);
+        jPanel64.setVisible(false);
+        jPanel65.setVisible(false);
+        jPanel66.setVisible(false);
+        jPanel67.setVisible(false);
+        jPanel68.setVisible(false);
 
+        if (placarVisitante.get(0) == placarCasa.get(0)) {
+            jPanel68.setVisible(true);
+            jLabel63.setText("5");
+            jLabel65.setText("4");
+        } if (placarVisitante.get(1) == placarCasa.get(1)) {
+            jPanel62.setVisible(true);
+            jLabel45.setText("5");
+            jLabel47.setText("4");
+        }  if (placarVisitante.get(2) == placarCasa.get(2)) {
+            jPanel60.setVisible(true);
+            jLabel42.setText("5");
+            jLabel44.setText("4");
+        } if (placarVisitante.get(3) == placarCasa.get(3)) {
+            jPanel67.setVisible(true);
+            jLabel60.setText("5");
+            jLabel62.setText("4");
+        }  if (placarVisitante.get(4) == placarCasa.get(4)) {
+            jPanel66.setVisible(true);
+            jLabel57.setText("5");
+            jLabel59.setText("4");
+        }if (placarVisitante.get(5) == placarCasa.get(5)) {
+            jPanel65.setVisible(true);
+            jLabel54.setText("5");
+            jLabel56.setText("4");
+        }  if (placarVisitante.get(6) == placarCasa.get(6)) {
+            jPanel64.setVisible(true);
+            jLabel51.setText("5");
+            jLabel53.setText("4");
+        }  if (placarVisitante.get(7) == placarCasa.get(7)) {
+            jPanel63.setVisible(true);
+            jLabel48.setText("5");
+            jLabel50.setText("4");
+        } else {
+        }
     }
 
     public static void main(String args[]) {
@@ -1504,8 +1772,32 @@ public class Oitavas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     public javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
     public javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     public javax.swing.JLabel jLabel9;
@@ -1566,7 +1858,15 @@ public class Oitavas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel58;
     private javax.swing.JPanel jPanel59;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel60;
     private javax.swing.JPanel jPanel61;
+    private javax.swing.JPanel jPanel62;
+    private javax.swing.JPanel jPanel63;
+    private javax.swing.JPanel jPanel64;
+    private javax.swing.JPanel jPanel65;
+    private javax.swing.JPanel jPanel66;
+    private javax.swing.JPanel jPanel67;
+    private javax.swing.JPanel jPanel68;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
