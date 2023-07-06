@@ -31,6 +31,7 @@ public class Oitavas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         wallpaperjLabel = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -44,6 +45,7 @@ public class Oitavas extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
         jPanel36 = new javax.swing.JPanel();
+        jPanel35 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
@@ -129,8 +131,12 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel49 = new javax.swing.JPanel();
         jPanel56 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
+        jPanel58 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        jPanel61 = new javax.swing.JPanel();
+        jPanel59 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jPanel35 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
@@ -138,17 +144,24 @@ public class Oitavas extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1300, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jScrollPane1.setBackground(new java.awt.Color(51, 0, 153));
+        jScrollPane1.setForeground(new java.awt.Color(51, 0, 153));
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane1.setHorizontalScrollBar(null);
+
         jLayeredPane1.setBackground(new java.awt.Color(255, 0, 51));
         jLayeredPane1.setMinimumSize(new java.awt.Dimension(1280, 720));
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(1280, 800));
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         wallpaperjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        wallpaperjLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wallpaper2.jpg"))); // NOI18N
+        wallpaperjLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pxfuel.jpg"))); // NOI18N
         wallpaperjLabel.setText("\n");
         wallpaperjLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         wallpaperjLabel.setPreferredSize(new java.awt.Dimension(1280, 720));
         jLayeredPane1.setLayer(wallpaperjLabel, -1);
-        jLayeredPane1.add(wallpaperjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 690));
+        jLayeredPane1.add(wallpaperjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 770));
 
         jPanel1.setBackground(new java.awt.Color(87, 87, 87));
         jPanel1.setOpaque(false);
@@ -266,7 +279,22 @@ public class Oitavas extends javax.swing.JFrame {
 
         jPanel1.add(jPanel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 48, 450, 8));
 
-        jLayeredPane1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 80));
+        jPanel35.setBackground(new java.awt.Color(51, 0, 153));
+
+        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
+        jPanel35.setLayout(jPanel35Layout);
+        jPanel35Layout.setHorizontalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 233, Short.MAX_VALUE)
+        );
+        jPanel35Layout.setVerticalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 8, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 48, 233, 8));
+
+        jLayeredPane1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 640, 1280, 80));
 
         jPanel2.setBackground(new java.awt.Color(87, 87, 87));
         jPanel2.setOpaque(false);
@@ -1200,6 +1228,53 @@ public class Oitavas extends javax.swing.JFrame {
 
         jPanel9.setOpaque(false);
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLayeredPane1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 800, 1280, 50));
+
+        jPanel58.setOpaque(false);
+        jPanel58.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Paulistão_sicred_2023 (1).png"))); // NOI18N
+        jPanel58.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, 64));
+
+        jPanel61.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel61Layout = new javax.swing.GroupLayout(jPanel61);
+        jPanel61.setLayout(jPanel61Layout);
+        jPanel61Layout.setHorizontalGroup(
+            jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 312, Short.MAX_VALUE)
+        );
+        jPanel61Layout.setVerticalGroup(
+            jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 4, Short.MAX_VALUE)
+        );
+
+        jPanel58.add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, 312, 4));
+
+        jPanel59.setBackground(new java.awt.Color(51, 0, 153));
+        jPanel59.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel59.setForeground(new java.awt.Color(51, 0, 153));
+
+        jLabel6.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("OITAVAS DE FINAL");
+
+        javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
+        jPanel59.setLayout(jPanel59Layout);
+        jPanel59Layout.setHorizontalGroup(
+            jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jPanel59Layout.setVerticalGroup(
+            jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+        );
+
+        jPanel58.add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, -1, -1));
+
+        jLayeredPane1.add(jPanel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 80));
 
         jButton1.setBackground(new java.awt.Color(51, 0, 153));
         jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
@@ -1207,26 +1282,11 @@ public class Oitavas extends javax.swing.JFrame {
         jButton1.setText("AVANÇAR >");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel9.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 0, 120, 30));
+        jLayeredPane1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 730, 120, 30));
 
-        jLayeredPane1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 640, 1280, 50));
+        jScrollPane1.setViewportView(jLayeredPane1);
 
-        jPanel35.setBackground(new java.awt.Color(51, 0, 153));
-
-        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
-        jPanel35.setLayout(jPanel35Layout);
-        jPanel35Layout.setHorizontalGroup(
-            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 233, Short.MAX_VALUE)
-        );
-        jPanel35Layout.setVerticalGroup(
-            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
-        );
-
-        jLayeredPane1.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 48, 233, 8));
-
-        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 730));
 
         pack();
         setLocationRelativeTo(null);
@@ -1443,7 +1503,9 @@ public class Oitavas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
     public javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     public javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     public javax.swing.JLabel jLabel9;
@@ -1501,10 +1563,14 @@ public class Oitavas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel55;
     private javax.swing.JPanel jPanel56;
     private javax.swing.JPanel jPanel57;
+    private javax.swing.JPanel jPanel58;
+    private javax.swing.JPanel jPanel59;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel61;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JLabel time1jLabel;
     private javax.swing.JLabel wallpaperjLabel;
     // End of variables declaration//GEN-END:variables
