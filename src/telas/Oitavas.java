@@ -1,5 +1,6 @@
 package telas;
 
+import campeonato.Placar;
 import java.util.ArrayList;
 import java.util.Collections;
 import campeonato.Time;
@@ -15,6 +16,7 @@ import javax.swing.ImageIcon;
 
 public class Oitavas extends javax.swing.JFrame {
 
+    Quartas quartas = new Quartas();
     ArrayList<Time> times;
     ImageIcon atleticosorocaba, botafogo, cotia, corinthians, ferroviaria, audax, guarani, interlimeira,
             ituano, marilia, mirassol, oeste, palmeiras, pontepreta, bragantino, santoandre, santos, saobernardo, saocaetano,
@@ -1527,11 +1529,7 @@ public class Oitavas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        try {
-            new Quartas().setVisible(true);
-        } catch (IOException ex) {
-            Logger.getLogger(Oitavas.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        quartas.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -1618,7 +1616,7 @@ public class Oitavas extends javax.swing.JFrame {
         Collections.shuffle(times);
     }
 
-    private void timeAleatorio() {
+    private void timeAleatorio() throws IOException {
         Random random = new Random();
         List<Integer> indicesSelecionados = new ArrayList<>();
 
@@ -1682,23 +1680,21 @@ public class Oitavas extends javax.swing.JFrame {
         placarAleatorio();
     }
 
-    public void placarAleatorio() {
+    public void placarAleatorio() throws IOException {
 
-        Random random = new Random();
-        List<Integer> placarVisitante = new ArrayList<>();
-        List<Integer> placarCasa = new ArrayList<>();
+        ArrayList<Placar> placares = new ArrayList<Placar>();
         for (int i = 0; i < 8; i++) {
-            placarVisitante.add(random.nextInt(6));
-            placarCasa.add(random.nextInt(6));
+            Placar placar = new Placar();
+            placares.add(placar);
         }
-        jLabel17.setText(String.valueOf(placarVisitante.get(0)) + "    x    " + String.valueOf(placarCasa.get(0)));
-        jLabel18.setText(String.valueOf(placarVisitante.get(1)) + "    x    " + String.valueOf(placarCasa.get(1)));
-        jLabel19.setText(String.valueOf(placarVisitante.get(2)) + "    x    " + String.valueOf(placarCasa.get(2)));
-        jLabel20.setText(String.valueOf(placarVisitante.get(3)) + "    x    " + String.valueOf(placarCasa.get(3)));
-        jLabel21.setText(String.valueOf(placarVisitante.get(4)) + "    x    " + String.valueOf(placarCasa.get(4)));
-        jLabel22.setText(String.valueOf(placarVisitante.get(5)) + "    x    " + String.valueOf(placarCasa.get(5)));
-        jLabel23.setText(String.valueOf(placarVisitante.get(6)) + "    x    " + String.valueOf(placarCasa.get(6)));
-        jLabel24.setText(String.valueOf(placarVisitante.get(7)) + "    x    " + String.valueOf(placarCasa.get(7)));
+        jLabel17.setText(String.valueOf(placares.get(0).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(0).getPlacarCasa()));
+        jLabel18.setText(String.valueOf(placares.get(1).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(1).getPlacarCasa()));
+        jLabel19.setText(String.valueOf(placares.get(2).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(2).getPlacarCasa()));
+        jLabel20.setText(String.valueOf(placares.get(3).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(3).getPlacarCasa()));
+        jLabel21.setText(String.valueOf(placares.get(4).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(4).getPlacarCasa()));
+        jLabel22.setText(String.valueOf(placares.get(5).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(5).getPlacarCasa()));
+        jLabel23.setText(String.valueOf(placares.get(6).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(6).getPlacarCasa()));
+        jLabel24.setText(String.valueOf(placares.get(7).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(7).getPlacarCasa()));
         jPanel60.setVisible(false);
         jPanel62.setVisible(false);
         jPanel63.setVisible(false);
@@ -1707,8 +1703,13 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel66.setVisible(false);
         jPanel67.setVisible(false);
         jPanel68.setVisible(false);
+        placarPenaltis(placares);
+        quartas.vencedoresOitavas(placares, this);
+    }
 
-        if (placarVisitante.get(0) == placarCasa.get(0)) {
+    private void placarPenaltis(ArrayList<Placar> placares) {
+        Random random = new Random();
+        if (placares.get(0).getPlacarVisitante() == placares.get(0).getPlacarCasa()) {
             jPanel68.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -1756,7 +1757,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(1) == placarCasa.get(1)) {
+        if (placares.get(1).getPlacarVisitante() == placares.get(1).getPlacarCasa()) {
             jPanel62.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -1804,7 +1805,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(2) == placarCasa.get(2)) {
+        if (placares.get(2).getPlacarVisitante() == placares.get(2).getPlacarCasa()) {
             jPanel60.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -1852,7 +1853,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(3) == placarCasa.get(3)) {
+        if (placares.get(3).getPlacarVisitante() == placares.get(3).getPlacarCasa()) {
             jPanel67.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -1900,7 +1901,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(4) == placarCasa.get(4)) {
+        if (placares.get(4).getPlacarVisitante() == placares.get(4).getPlacarCasa()) {
             jPanel66.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -1948,7 +1949,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(5) == placarCasa.get(5)) {
+        if (placares.get(5).getPlacarVisitante() == placares.get(5).getPlacarCasa()) {
             jPanel65.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -1996,7 +1997,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(6) == placarCasa.get(6)) {
+        if (placares.get(6).getPlacarVisitante() == placares.get(6).getPlacarCasa()) {
             jPanel64.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -2044,7 +2045,7 @@ public class Oitavas extends javax.swing.JFrame {
             }
         }
 
-        if (placarVisitante.get(7) == placarCasa.get(7)) {
+        if (placares.get(7).getPlacarVisitante() == placares.get(7).getPlacarCasa()) {
             jPanel63.setVisible(true);
             int escolha = random.nextInt(9) + 1;
 
@@ -2090,16 +2091,10 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel50.setText("3");
                     break;
             }
+
         } else {
         }
-        vencedoresOitavas(placarVisitante, placarCasa);
-    }
 
-    public void vencedoresOitavas(List<Integer> placarVisitante, List<Integer> placarCasa) {
-        if (placarVisitante.get(0) > placarCasa.get(0)) {
-            jLabel1.getText();
-            jLabel26.getIcon();
-        }
     }
 
     public static void main(String args[]) {
@@ -2138,7 +2133,7 @@ public class Oitavas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
+    public javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;

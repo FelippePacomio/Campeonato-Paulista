@@ -1,5 +1,6 @@
 package telas;
 
+import campeonato.Placar;
 import java.util.ArrayList;
 import java.util.Collections;
 import campeonato.Time;
@@ -23,7 +24,7 @@ public class Quartas extends javax.swing.JFrame {
     public Quartas() throws IOException {
         lerEscudos();
         initComponents();
-     //   timesVencedoresOitavas();
+
     }
 
     @SuppressWarnings("unchecked")
@@ -898,35 +899,16 @@ public class Quartas extends javax.swing.JFrame {
         Collections.shuffle(times);
     }
 
-  /*  private void timesVencedoresOitavas() {
-Oitavas oitavas = new Oitavas();
-
-        jLabel30.setIcon(times.get(indicesSelecionados.get(8)).getEmblema());
-        jLabel30.setText("");
-        jLabel9.setText(times.get(indicesSelecionados.get(8)).getNome());
-        jLabel38.setIcon(times.get(indicesSelecionados.get(9)).getEmblema());
-        jLabel38.setText("");
-        jLabel10.setText(times.get(indicesSelecionados.get(9)).getNome());
-        jLabel31.setIcon(times.get(indicesSelecionados.get(10)).getEmblema());
-        jLabel31.setText("");
-        jLabel11.setText(times.get(indicesSelecionados.get(10)).getNome());
-        jLabel37.setIcon(times.get(indicesSelecionados.get(11)).getEmblema());
-        jLabel37.setText("");
-        jLabel12.setText(times.get(indicesSelecionados.get(11)).getNome());
-        jLabel32.setIcon(times.get(indicesSelecionados.get(12)).getEmblema());
-        jLabel32.setText("");
-        jLabel13.setText(times.get(indicesSelecionados.get(12)).getNome());
-        jLabel36.setIcon(times.get(indicesSelecionados.get(13)).getEmblema());
-        jLabel36.setText("");
-        jLabel14.setText(times.get(indicesSelecionados.get(13)).getNome());
-        jLabel33.setIcon(times.get(indicesSelecionados.get(14)).getEmblema());
-        jLabel33.setText("");
-        jLabel15.setText(times.get(indicesSelecionados.get(14)).getNome());
-        jLabel35.setIcon(times.get(indicesSelecionados.get(15)).getEmblema());
-        jLabel35.setText("");
-        jLabel16.setText(times.get(indicesSelecionados.get(15)).getNome());
-        placarAleatorio();
-    }*/
+    public void vencedoresOitavas(ArrayList<Placar> placares, Oitavas oitavas) throws IOException {
+        System.out.println(placares.get(0).getPlacarVisitante());
+        System.out.println(placares.get(0).getPlacarCasa());
+        if (placares.get(0).getPlacarVisitante() > placares.get(0).getPlacarCasa()) {
+            jLabel15.setText(oitavas.jLabel1.getText());
+            jLabel33.setIcon(oitavas.jLabel26.getIcon());
+            jLabel33.setText("");
+            System.out.println(oitavas.jLabel1.getText());
+        }
+    }
 
     public void placarAleatorio() {
 
@@ -947,8 +929,6 @@ Oitavas oitavas = new Oitavas();
         jPanel64.setVisible(false);
         jPanel65.setVisible(false);
         jPanel66.setVisible(false);
-
-       
 
         if (placarVisitante.get(4) == placarCasa.get(4)) {
             jPanel66.setVisible(true);
