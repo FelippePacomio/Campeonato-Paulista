@@ -1,14 +1,13 @@
 package telas;
 
+import campeonato.Placar;
 import java.util.ArrayList;
 import java.util.Collections;
 import campeonato.Time;
-import java.awt.Insets;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,6 +16,7 @@ import javax.swing.ImageIcon;
 
 public class Oitavas extends javax.swing.JFrame {
 
+    Quartas quartas = new Quartas();
     ArrayList<Time> times;
     ImageIcon atleticosorocaba, botafogo, cotia, corinthians, ferroviaria, audax, guarani, interlimeira,
             ituano, marilia, mirassol, oeste, palmeiras, pontepreta, bragantino, santoandre, santos, saobernardo, saocaetano,
@@ -1507,6 +1507,17 @@ public class Oitavas extends javax.swing.JFrame {
         jButton1.setText("AVANÇAR >");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton1MouseExited(evt);
+            }
+        });
         jLayeredPane1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 730, 120, 30));
 
         jScrollPane1.setViewportView(jLayeredPane1);
@@ -1516,6 +1527,19 @@ public class Oitavas extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        quartas.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseEntered
+
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseExited
 
     private void lerEscudos() throws IOException {
         BufferedImage img = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Atlético_Sorocaba-SP.png"));
@@ -1592,7 +1616,7 @@ public class Oitavas extends javax.swing.JFrame {
         Collections.shuffle(times);
     }
 
-    private void timeAleatorio() {
+    private void timeAleatorio() throws IOException {
         Random random = new Random();
         List<Integer> indicesSelecionados = new ArrayList<>();
 
@@ -1656,23 +1680,22 @@ public class Oitavas extends javax.swing.JFrame {
         placarAleatorio();
     }
 
-    public void placarAleatorio() {
+    public void placarAleatorio() throws IOException {
 
-        Random random = new Random();
-        List<Integer> placarVisitante = new ArrayList<>();
-        List<Integer> placarCasa = new ArrayList<>();
+        int escolha = 0;
+        ArrayList<Placar> placares = new ArrayList<Placar>();
         for (int i = 0; i < 8; i++) {
-            placarVisitante.add(random.nextInt(6));
-            placarCasa.add(random.nextInt(6));
+            Placar placar = new Placar();
+            placares.add(placar);
         }
-        jLabel17.setText(String.valueOf(placarVisitante.get(0)) + "    x    " + String.valueOf(placarCasa.get(0)));
-        jLabel18.setText(String.valueOf(placarVisitante.get(1)) + "    x    " + String.valueOf(placarCasa.get(1)));
-        jLabel19.setText(String.valueOf(placarVisitante.get(2)) + "    x    " + String.valueOf(placarCasa.get(2)));
-        jLabel20.setText(String.valueOf(placarVisitante.get(3)) + "    x    " + String.valueOf(placarCasa.get(3)));
-        jLabel21.setText(String.valueOf(placarVisitante.get(4)) + "    x    " + String.valueOf(placarCasa.get(4)));
-        jLabel22.setText(String.valueOf(placarVisitante.get(5)) + "    x    " + String.valueOf(placarCasa.get(5)));
-        jLabel23.setText(String.valueOf(placarVisitante.get(6)) + "    x    " + String.valueOf(placarCasa.get(6)));
-        jLabel24.setText(String.valueOf(placarVisitante.get(7)) + "    x    " + String.valueOf(placarCasa.get(7)));
+        jLabel17.setText(String.valueOf(placares.get(0).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(0).getPlacarCasa()));
+        jLabel18.setText(String.valueOf(placares.get(1).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(1).getPlacarCasa()));
+        jLabel19.setText(String.valueOf(placares.get(2).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(2).getPlacarCasa()));
+        jLabel20.setText(String.valueOf(placares.get(3).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(3).getPlacarCasa()));
+        jLabel21.setText(String.valueOf(placares.get(4).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(4).getPlacarCasa()));
+        jLabel22.setText(String.valueOf(placares.get(5).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(5).getPlacarCasa()));
+        jLabel23.setText(String.valueOf(placares.get(6).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(6).getPlacarCasa()));
+        jLabel24.setText(String.valueOf(placares.get(7).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(7).getPlacarCasa()));
         jPanel60.setVisible(false);
         jPanel62.setVisible(false);
         jPanel63.setVisible(false);
@@ -1681,41 +1704,540 @@ public class Oitavas extends javax.swing.JFrame {
         jPanel66.setVisible(false);
         jPanel67.setVisible(false);
         jPanel68.setVisible(false);
+        placarPenaltis(placares, escolha);
+    }
 
-        if (placarVisitante.get(0) == placarCasa.get(0)) {
+    public void placarPenaltis(ArrayList<Placar> placares, int escolha) throws IOException {
+        Random random = new Random();
+        ArrayList<Time> times = new ArrayList<Time>();
+        for (int i = 0; i < 8; i++) {
+            Time time = new Time();
+            times.add(time);
+        }
+        if (placares.get(0).getPlacarVisitante() == placares.get(0).getPlacarCasa()) {
             jPanel68.setVisible(true);
-            jLabel63.setText("5");
-            jLabel65.setText("4");
-        } if (placarVisitante.get(1) == placarCasa.get(1)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel63.setText("5");
+                    jLabel65.setText("4");
+                    times.get(0).setVencedor(jLabel1.getText());
+                    times.get(0).setEmblema((ImageIcon) jLabel26.getIcon());
+                    break;
+                case 2:
+                    jLabel63.setText("4");
+                    jLabel65.setText("5");
+                    times.get(0).setVencedor(jLabel2.getText());
+                    break;
+                case 3:
+                    jLabel63.setText("6");
+                    jLabel65.setText("5");
+                    times.get(0).setVencedor(jLabel1.getText());
+                    break;
+                case 4:
+                    jLabel63.setText("5");
+                    jLabel65.setText("6");
+                    times.get(0).setVencedor(jLabel2.getText());
+                    break;
+                case 5:
+                    jLabel63.setText("4");
+                    jLabel65.setText("3");
+                    times.get(0).setVencedor(jLabel1.getText());
+                    break;
+                case 6:
+                    jLabel63.setText("3");
+                    jLabel65.setText("4");
+                    times.get(0).setVencedor(jLabel2.getText());
+                    break;
+                case 7:
+                    jLabel63.setText("7");
+                    jLabel65.setText("6");
+                    times.get(0).setVencedor(jLabel1.getText());
+                    break;
+                case 8:
+                    jLabel63.setText("6");
+                    jLabel65.setText("7");
+                    times.get(0).setVencedor(jLabel2.getText());
+                    break;
+                case 9:
+                    jLabel63.setText("3");
+                    jLabel65.setText("0");
+                    times.get(0).setVencedor(jLabel1.getText());
+                    break;
+                case 10:
+                    jLabel63.setText("0");
+                    jLabel65.setText("3");
+                    times.get(0).setVencedor(jLabel2.getText());
+                    break;
+            }
+
+        }
+
+        if (placares.get(1).getPlacarVisitante() == placares.get(1).getPlacarCasa()) {
             jPanel62.setVisible(true);
-            jLabel45.setText("5");
-            jLabel47.setText("4");
-        }  if (placarVisitante.get(2) == placarCasa.get(2)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel45.setText("5");
+                    jLabel47.setText("4");
+                    times.get(1).setVencedor(time1jLabel.getText());
+                    break;
+                case 2:
+                    jLabel45.setText("4");
+                    jLabel47.setText("5");
+                    times.get(1).setVencedor(jLabel4.getText());
+                    break;
+                case 3:
+                    jLabel45.setText("6");
+                    jLabel47.setText("5");
+                    times.get(1).setVencedor(time1jLabel.getText());
+                    break;
+                case 4:
+                    jLabel45.setText("5");
+                    jLabel47.setText("6");
+                    times.get(1).setVencedor(jLabel4.getText());
+                    break;
+                case 5:
+                    jLabel45.setText("4");
+                    jLabel47.setText("3");
+                    times.get(1).setVencedor(time1jLabel.getText());
+                    break;
+                case 6:
+                    jLabel45.setText("3");
+                    jLabel47.setText("4");
+                    times.get(1).setVencedor(jLabel4.getText());
+                    break;
+                case 7:
+                    jLabel45.setText("7");
+                    jLabel47.setText("6");
+                    times.get(1).setVencedor(time1jLabel.getText());
+                    break;
+                case 8:
+                    jLabel45.setText("6");
+                    jLabel47.setText("7");
+                    times.get(1).setVencedor(jLabel4.getText());
+                    break;
+                case 9:
+                    jLabel45.setText("3");
+                    jLabel47.setText("0");
+                    times.get(1).setVencedor(time1jLabel.getText());
+                    break;
+                case 10:
+                    jLabel45.setText("0");
+                    jLabel47.setText("3");
+                    times.get(1).setVencedor(jLabel4.getText());
+                    break;
+            }
+        }
+
+        if (placares.get(2).getPlacarVisitante() == placares.get(2).getPlacarCasa()) {
             jPanel60.setVisible(true);
-            jLabel42.setText("5");
-            jLabel44.setText("4");
-        } if (placarVisitante.get(3) == placarCasa.get(3)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel42.setText("5");
+                    jLabel44.setText("4");
+                    times.get(2).setVencedor(jLabel5.getText());
+                    break;
+                case 2:
+                    jLabel42.setText("4");
+                    jLabel44.setText("5");
+                    times.get(2).setVencedor(jLabel40.getText());
+                    break;
+                case 3:
+                    jLabel42.setText("6");
+                    jLabel44.setText("5");
+                    times.get(2).setVencedor(jLabel5.getText());
+                    break;
+                case 4:
+                    jLabel42.setText("5");
+                    jLabel44.setText("6");
+                    times.get(2).setVencedor(jLabel40.getText());
+                    break;
+                case 5:
+                    jLabel42.setText("4");
+                    jLabel44.setText("3");
+                    times.get(2).setVencedor(jLabel5.getText());
+                    break;
+                case 6:
+                    jLabel42.setText("3");
+                    jLabel44.setText("4");
+                    times.get(2).setVencedor(jLabel40.getText());
+                    break;
+                case 7:
+                    jLabel42.setText("7");
+                    jLabel44.setText("6");
+                    times.get(2).setVencedor(jLabel5.getText());
+                    break;
+                case 8:
+                    jLabel42.setText("6");
+                    jLabel44.setText("7");
+                    times.get(2).setVencedor(jLabel40.getText());
+                    break;
+                case 9:
+                    jLabel42.setText("3");
+                    jLabel44.setText("0");
+                    times.get(2).setVencedor(jLabel5.getText());
+                    break;
+                case 10:
+                    jLabel42.setText("0");
+                    jLabel44.setText("3");
+                    times.get(2).setVencedor(jLabel40.getText());
+                    break;
+            }
+        }
+
+        if (placares.get(3).getPlacarVisitante() == placares.get(3).getPlacarCasa()) {
             jPanel67.setVisible(true);
-            jLabel60.setText("5");
-            jLabel62.setText("4");
-        }  if (placarVisitante.get(4) == placarCasa.get(4)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel60.setText("5");
+                    jLabel62.setText("4");
+                    times.get(3).setVencedor(jLabel7.getText());
+                    break;
+                case 2:
+                    jLabel60.setText("4");
+                    jLabel62.setText("5");
+                    times.get(3).setVencedor(jLabel8.getText());
+                    break;
+                case 3:
+                    jLabel60.setText("6");
+                    jLabel62.setText("5");
+                    times.get(3).setVencedor(jLabel7.getText());
+                    break;
+                case 4:
+                    jLabel60.setText("5");
+                    jLabel62.setText("6");
+                    times.get(3).setVencedor(jLabel8.getText());
+                    break;
+                case 5:
+                    jLabel60.setText("4");
+                    jLabel62.setText("3");
+                    times.get(3).setVencedor(jLabel7.getText());
+                    break;
+                case 6:
+                    jLabel60.setText("3");
+                    jLabel62.setText("4");
+                    times.get(3).setVencedor(jLabel8.getText());
+                    break;
+                case 7:
+                    jLabel60.setText("7");
+                    jLabel62.setText("6");
+                    times.get(3).setVencedor(jLabel7.getText());
+                    break;
+                case 8:
+                    jLabel60.setText("6");
+                    jLabel62.setText("7");
+                    times.get(3).setVencedor(jLabel8.getText());
+                    break;
+                case 9:
+                    jLabel60.setText("3");
+                    jLabel62.setText("0");
+                    times.get(3).setVencedor(jLabel7.getText());
+                    break;
+                case 10:
+                    jLabel60.setText("0");
+                    jLabel62.setText("3");
+                    times.get(3).setVencedor(jLabel8.getText());
+                    break;
+            }
+        }
+
+        if (placares.get(4).getPlacarVisitante() == placares.get(4).getPlacarCasa()) {
             jPanel66.setVisible(true);
-            jLabel57.setText("5");
-            jLabel59.setText("4");
-        }if (placarVisitante.get(5) == placarCasa.get(5)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel57.setText("5");
+                    jLabel59.setText("4");
+                    times.get(4).setVencedor(jLabel9.getText());
+                    break;
+                case 2:
+                    jLabel57.setText("4");
+                    jLabel59.setText("5");
+                    times.get(4).setVencedor(jLabel10.getText());
+                    break;
+                case 3:
+                    jLabel57.setText("6");
+                    jLabel59.setText("5");
+                    times.get(4).setVencedor(jLabel9.getText());
+                    break;
+                case 4:
+                    jLabel57.setText("5");
+                    jLabel59.setText("6");
+                    times.get(4).setVencedor(jLabel10.getText());
+                    break;
+                case 5:
+                    jLabel57.setText("4");
+                    jLabel59.setText("3");
+                    times.get(4).setVencedor(jLabel9.getText());
+                    break;
+                case 6:
+                    jLabel57.setText("3");
+                    jLabel59.setText("4");
+                    times.get(4).setVencedor(jLabel10.getText());
+                    break;
+                case 7:
+                    jLabel57.setText("7");
+                    jLabel59.setText("6");
+                    times.get(4).setVencedor(jLabel9.getText());
+                    break;
+                case 8:
+                    jLabel57.setText("6");
+                    jLabel59.setText("7");
+                    times.get(4).setVencedor(jLabel10.getText());
+                    break;
+                case 9:
+                    jLabel57.setText("3");
+                    jLabel59.setText("0");
+                    times.get(4).setVencedor(jLabel9.getText());
+                    break;
+                case 10:
+                    jLabel57.setText("0");
+                    jLabel59.setText("3");
+                    times.get(4).setVencedor(jLabel10.getText());
+                    break;
+            }
+        }
+
+        if (placares.get(5).getPlacarVisitante() == placares.get(5).getPlacarCasa()) {
             jPanel65.setVisible(true);
-            jLabel54.setText("5");
-            jLabel56.setText("4");
-        }  if (placarVisitante.get(6) == placarCasa.get(6)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel54.setText("5");
+                    jLabel56.setText("4");
+                    times.get(5).setVencedor(jLabel11.getText());
+                    break;
+                case 2:
+                    jLabel54.setText("4");
+                    jLabel56.setText("5");
+                    times.get(5).setVencedor(jLabel12.getText());
+                    break;
+                case 3:
+                    jLabel54.setText("6");
+                    jLabel56.setText("5");
+                    times.get(5).setVencedor(jLabel11.getText());
+
+                    break;
+                case 4:
+                    jLabel54.setText("5");
+                    jLabel56.setText("6");
+                    times.get(5).setVencedor(jLabel12.getText());
+                    break;
+                case 5:
+                    jLabel54.setText("4");
+                    jLabel56.setText("3");
+                    times.get(5).setVencedor(jLabel11.getText());
+                    break;
+                case 6:
+                    jLabel54.setText("3");
+                    jLabel56.setText("4");
+                    times.get(5).setVencedor(jLabel12.getText());
+                    break;
+                case 7:
+                    jLabel54.setText("7");
+                    jLabel56.setText("6");
+                    times.get(5).setVencedor(jLabel11.getText());
+                    break;
+                case 8:
+                    jLabel54.setText("6");
+                    jLabel56.setText("7");
+                    times.get(5).setVencedor(jLabel12.getText());
+                    break;
+                case 9:
+                    jLabel54.setText("3");
+                    jLabel56.setText("0");
+                    times.get(5).setVencedor(jLabel11.getText());
+                    break;
+                case 10:
+                    jLabel54.setText("0");
+                    jLabel56.setText("3");
+                    times.get(5).setVencedor(jLabel12.getText());
+                    break;
+            }
+        }
+
+        if (placares.get(6).getPlacarVisitante() == placares.get(6).getPlacarCasa()) {
             jPanel64.setVisible(true);
-            jLabel51.setText("5");
-            jLabel53.setText("4");
-        }  if (placarVisitante.get(7) == placarCasa.get(7)) {
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel51.setText("5");
+                    jLabel53.setText("4");
+                    times.get(6).setVencedor(jLabel13.getText());
+                    break;
+                case 2:
+                    jLabel51.setText("4");
+                    jLabel53.setText("5");
+                    times.get(6).setVencedor(jLabel14.getText());
+                    break;
+                case 3:
+                    jLabel51.setText("6");
+                    jLabel53.setText("5");
+                    times.get(6).setVencedor(jLabel13.getText());
+                    break;
+                case 4:
+                    jLabel51.setText("5");
+                    jLabel53.setText("6");
+                    times.get(6).setVencedor(jLabel14.getText());
+                    break;
+                case 5:
+                    jLabel51.setText("4");
+                    jLabel53.setText("3");
+                    times.get(6).setVencedor(jLabel13.getText());
+                    break;
+                case 6:
+                    jLabel51.setText("3");
+                    jLabel53.setText("4");
+                    times.get(6).setVencedor(jLabel14.getText());
+                    break;
+                case 7:
+                    jLabel51.setText("7");
+                    jLabel53.setText("6");
+                    times.get(6).setVencedor(jLabel13.getText());
+                    break;
+                case 8:
+                    jLabel51.setText("6");
+                    jLabel53.setText("7");
+                    times.get(6).setVencedor(jLabel14.getText());
+                    break;
+                case 9:
+                    jLabel51.setText("3");
+                    jLabel53.setText("0");
+                    times.get(6).setVencedor(jLabel13.getText());
+                    break;
+                case 10:
+                    jLabel51.setText("0");
+                    jLabel53.setText("3");
+                    times.get(6).setVencedor(jLabel14.getText());
+                    break;
+            }
+        }
+
+        if (placares.get(7).getPlacarVisitante() == placares.get(7).getPlacarCasa()) {
             jPanel63.setVisible(true);
-            jLabel48.setText("5");
-            jLabel50.setText("4");
+            escolha = random.nextInt(9) + 1;
+
+            switch (escolha) {
+                case 1:
+                    jLabel48.setText("5");
+                    jLabel50.setText("4");
+                    times.get(7).setVencedor(jLabel15.getText());
+                    break;
+                case 2:
+                    jLabel48.setText("4");
+                    jLabel50.setText("5");
+                    times.get(7).setVencedor(jLabel16.getText());
+                    break;
+                case 3:
+                    jLabel48.setText("6");
+                    jLabel50.setText("5");
+                    times.get(7).setVencedor(jLabel15.getText());
+                    break;
+                case 4:
+                    jLabel48.setText("5");
+                    jLabel50.setText("6");
+                    times.get(7).setVencedor(jLabel16.getText());
+                    break;
+                case 5:
+                    jLabel48.setText("4");
+                    jLabel50.setText("3");
+                    times.get(7).setVencedor(jLabel15.getText());
+                    break;
+                case 6:
+                    jLabel48.setText("3");
+                    jLabel50.setText("4");
+                    times.get(7).setVencedor(jLabel16.getText());
+                    break;
+                case 7:
+                    jLabel48.setText("7");
+                    jLabel50.setText("6");
+                    times.get(7).setVencedor(jLabel15.getText());
+                    break;
+                case 8:
+                    jLabel48.setText("6");
+                    jLabel50.setText("7");
+                    times.get(7).setVencedor(jLabel16.getText());
+                    break;
+                case 9:
+                    jLabel48.setText("3");
+                    jLabel50.setText("0");
+                    times.get(7).setVencedor(jLabel15.getText());
+                    break;
+                case 10:
+                    jLabel48.setText("0");
+                    jLabel50.setText("3");
+                    times.get(7).setVencedor(jLabel16.getText());
+                    break;
+
+            }
+
         } else {
         }
+        timeVencedor(placares, times);
+
+    }
+
+    public void timeVencedor(ArrayList<Placar> placares, ArrayList<Time> times) throws IOException {
+        if (placares.get(0).getPlacarVisitante() > placares.get(0).getPlacarCasa()) {
+            times.get(0).setVencedor(jLabel1.getText());
+        } else if (placares.get(0).getPlacarVisitante() < placares.get(0).getPlacarCasa()) {
+            times.get(0).setVencedor(jLabel2.getText());
+        }
+        if (placares.get(1).getPlacarVisitante() > placares.get(1).getPlacarCasa()) {
+            times.get(1).setVencedor(time1jLabel.getText());
+        } else if (placares.get(1).getPlacarVisitante() < placares.get(1).getPlacarCasa()) {
+            times.get(1).setVencedor(jLabel4.getText());
+        }
+        if (placares.get(2).getPlacarVisitante() > placares.get(2).getPlacarCasa()) {
+            times.get(2).setVencedor(jLabel5.getText());
+        } else if (placares.get(2).getPlacarVisitante() < placares.get(2).getPlacarCasa()) {
+            times.get(2).setVencedor(jLabel40.getText());
+        }
+        if (placares.get(3).getPlacarVisitante() > placares.get(3).getPlacarCasa()) {
+            times.get(3).setVencedor(jLabel7.getText());
+        } else if (placares.get(3).getPlacarVisitante() < placares.get(3).getPlacarCasa()) {
+            times.get(3).setVencedor(jLabel8.getText());
+        }
+        if (placares.get(4).getPlacarVisitante() > placares.get(4).getPlacarCasa()) {
+            times.get(4).setVencedor(jLabel9.getText());
+        } else if (placares.get(4).getPlacarVisitante() < placares.get(4).getPlacarCasa()) {
+            times.get(4).setVencedor(jLabel10.getText());
+        }
+        if (placares.get(5).getPlacarVisitante() > placares.get(5).getPlacarCasa()) {
+            times.get(5).setVencedor(jLabel11.getText());
+        } else if (placares.get(5).getPlacarVisitante() < placares.get(5).getPlacarCasa()) {
+            times.get(5).setVencedor(jLabel12.getText());
+        }
+        if (placares.get(6).getPlacarVisitante() > placares.get(6).getPlacarCasa()) {
+            times.get(6).setVencedor(jLabel13.getText());
+        } else if (placares.get(6).getPlacarVisitante() < placares.get(6).getPlacarCasa()) {
+            times.get(6).setVencedor(jLabel14.getText());
+        }
+        if (placares.get(7).getPlacarVisitante() > placares.get(7).getPlacarCasa()) {
+            times.get(7).setVencedor(jLabel15.getText());
+        } else if (placares.get(7).getPlacarVisitante() < placares.get(7).getPlacarCasa()) {
+            times.get(7).setVencedor(jLabel16.getText());
+        }
+
+        System.out.println(times.get(0).getVencedor());
+        System.out.println(times.get(1).getVencedor());
+        System.out.println(times.get(2).getVencedor());
+        System.out.println(times.get(3).getVencedor());
+        System.out.println(times.get(4).getVencedor());
+        System.out.println(times.get(5).getVencedor());
+        System.out.println(times.get(6).getVencedor());
+        System.out.println(times.get(7).getVencedor());
+        quartas.vencedoresOitavas(placares, times);
     }
 
     public static void main(String args[]) {
@@ -1747,18 +2269,18 @@ public class Oitavas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
+    public javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
