@@ -1723,52 +1723,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel63.setText("5");
                     jLabel65.setText("4");
                     times.get(0).setVencedor(jLabel1.getText());
-                    times.get(0).setEmblema((ImageIcon) jLabel26.getIcon());
+                    times.get(0).setEscudo(jLabel26.getIcon());
                     break;
                 case 2:
                     jLabel63.setText("4");
                     jLabel65.setText("5");
                     times.get(0).setVencedor(jLabel2.getText());
+                    times.get(0).setEscudo(jLabel3.getIcon());
                     break;
                 case 3:
                     jLabel63.setText("6");
                     jLabel65.setText("5");
                     times.get(0).setVencedor(jLabel1.getText());
+                    times.get(0).setEscudo(jLabel26.getIcon());
                     break;
                 case 4:
                     jLabel63.setText("5");
                     jLabel65.setText("6");
                     times.get(0).setVencedor(jLabel2.getText());
+                    times.get(0).setEscudo(jLabel3.getIcon());
                     break;
                 case 5:
                     jLabel63.setText("4");
                     jLabel65.setText("3");
                     times.get(0).setVencedor(jLabel1.getText());
+                    times.get(0).setEscudo(jLabel26.getIcon());
                     break;
                 case 6:
                     jLabel63.setText("3");
                     jLabel65.setText("4");
                     times.get(0).setVencedor(jLabel2.getText());
+                    times.get(0).setEscudo(jLabel3.getIcon());
                     break;
                 case 7:
                     jLabel63.setText("7");
                     jLabel65.setText("6");
                     times.get(0).setVencedor(jLabel1.getText());
+                    times.get(0).setEscudo(jLabel26.getIcon());
                     break;
                 case 8:
                     jLabel63.setText("6");
                     jLabel65.setText("7");
                     times.get(0).setVencedor(jLabel2.getText());
+                    times.get(0).setEscudo(jLabel3.getIcon());
                     break;
                 case 9:
                     jLabel63.setText("3");
                     jLabel65.setText("0");
                     times.get(0).setVencedor(jLabel1.getText());
+                    times.get(0).setEscudo(jLabel26.getIcon());
                     break;
                 case 10:
                     jLabel63.setText("0");
                     jLabel65.setText("3");
                     times.get(0).setVencedor(jLabel2.getText());
+                    times.get(0).setEscudo(jLabel3.getIcon());
                     break;
             }
 
@@ -1783,51 +1792,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel45.setText("5");
                     jLabel47.setText("4");
                     times.get(1).setVencedor(time1jLabel.getText());
+                    times.get(1).setEscudo(jLabel27.getIcon());
                     break;
                 case 2:
                     jLabel45.setText("4");
                     jLabel47.setText("5");
                     times.get(1).setVencedor(jLabel4.getText());
+                    times.get(1).setEscudo(jLabel34.getIcon());
                     break;
                 case 3:
                     jLabel45.setText("6");
                     jLabel47.setText("5");
                     times.get(1).setVencedor(time1jLabel.getText());
+                    times.get(1).setEscudo(jLabel27.getIcon());
                     break;
                 case 4:
                     jLabel45.setText("5");
                     jLabel47.setText("6");
                     times.get(1).setVencedor(jLabel4.getText());
+                    times.get(1).setEscudo(jLabel34.getIcon());
                     break;
                 case 5:
                     jLabel45.setText("4");
                     jLabel47.setText("3");
                     times.get(1).setVencedor(time1jLabel.getText());
+                    times.get(1).setEscudo(jLabel27.getIcon());
                     break;
                 case 6:
                     jLabel45.setText("3");
                     jLabel47.setText("4");
                     times.get(1).setVencedor(jLabel4.getText());
+                    times.get(1).setEscudo(jLabel34.getIcon());
                     break;
                 case 7:
                     jLabel45.setText("7");
                     jLabel47.setText("6");
                     times.get(1).setVencedor(time1jLabel.getText());
+                    times.get(1).setEscudo(jLabel27.getIcon());
                     break;
                 case 8:
                     jLabel45.setText("6");
                     jLabel47.setText("7");
                     times.get(1).setVencedor(jLabel4.getText());
+                    times.get(1).setEscudo(jLabel34.getIcon());
                     break;
                 case 9:
                     jLabel45.setText("3");
                     jLabel47.setText("0");
                     times.get(1).setVencedor(time1jLabel.getText());
+                    times.get(1).setEscudo(jLabel27.getIcon());
                     break;
                 case 10:
                     jLabel45.setText("0");
                     jLabel47.setText("3");
                     times.get(1).setVencedor(jLabel4.getText());
+                    times.get(1).setEscudo(jLabel34.getIcon());
                     break;
             }
         }
@@ -1841,51 +1860,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel42.setText("5");
                     jLabel44.setText("4");
                     times.get(2).setVencedor(jLabel5.getText());
+                    times.get(2).setEscudo(jLabel28.getIcon());
                     break;
                 case 2:
                     jLabel42.setText("4");
                     jLabel44.setText("5");
                     times.get(2).setVencedor(jLabel40.getText());
+                    times.get(2).setEscudo(jLabel25.getIcon());
                     break;
                 case 3:
                     jLabel42.setText("6");
                     jLabel44.setText("5");
                     times.get(2).setVencedor(jLabel5.getText());
+                    times.get(2).setEscudo(jLabel28.getIcon());
                     break;
                 case 4:
                     jLabel42.setText("5");
                     jLabel44.setText("6");
                     times.get(2).setVencedor(jLabel40.getText());
+                    times.get(2).setEscudo(jLabel25.getIcon());
                     break;
                 case 5:
                     jLabel42.setText("4");
                     jLabel44.setText("3");
                     times.get(2).setVencedor(jLabel5.getText());
+                    times.get(2).setEscudo(jLabel28.getIcon());
                     break;
                 case 6:
                     jLabel42.setText("3");
                     jLabel44.setText("4");
                     times.get(2).setVencedor(jLabel40.getText());
+                    times.get(2).setEscudo(jLabel25.getIcon());
                     break;
                 case 7:
                     jLabel42.setText("7");
                     jLabel44.setText("6");
                     times.get(2).setVencedor(jLabel5.getText());
+                    times.get(2).setEscudo(jLabel28.getIcon());
                     break;
                 case 8:
                     jLabel42.setText("6");
                     jLabel44.setText("7");
                     times.get(2).setVencedor(jLabel40.getText());
+                    times.get(2).setEscudo(jLabel25.getIcon());
                     break;
                 case 9:
                     jLabel42.setText("3");
                     jLabel44.setText("0");
                     times.get(2).setVencedor(jLabel5.getText());
+                    times.get(2).setEscudo(jLabel28.getIcon());
                     break;
                 case 10:
                     jLabel42.setText("0");
                     jLabel44.setText("3");
                     times.get(2).setVencedor(jLabel40.getText());
+                    times.get(2).setEscudo(jLabel25.getIcon());
                     break;
             }
         }
@@ -1899,51 +1928,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel60.setText("5");
                     jLabel62.setText("4");
                     times.get(3).setVencedor(jLabel7.getText());
+                    times.get(3).setEscudo(jLabel29.getIcon());
                     break;
                 case 2:
                     jLabel60.setText("4");
                     jLabel62.setText("5");
                     times.get(3).setVencedor(jLabel8.getText());
+                    times.get(3).setEscudo(jLabel39.getIcon());
                     break;
                 case 3:
                     jLabel60.setText("6");
                     jLabel62.setText("5");
                     times.get(3).setVencedor(jLabel7.getText());
+                    times.get(3).setEscudo(jLabel29.getIcon());
                     break;
                 case 4:
                     jLabel60.setText("5");
                     jLabel62.setText("6");
                     times.get(3).setVencedor(jLabel8.getText());
+                    times.get(3).setEscudo(jLabel39.getIcon());
                     break;
                 case 5:
                     jLabel60.setText("4");
                     jLabel62.setText("3");
                     times.get(3).setVencedor(jLabel7.getText());
+                    times.get(3).setEscudo(jLabel29.getIcon());
                     break;
                 case 6:
                     jLabel60.setText("3");
                     jLabel62.setText("4");
                     times.get(3).setVencedor(jLabel8.getText());
+                    times.get(3).setEscudo(jLabel39.getIcon());
                     break;
                 case 7:
                     jLabel60.setText("7");
                     jLabel62.setText("6");
                     times.get(3).setVencedor(jLabel7.getText());
+                    times.get(3).setEscudo(jLabel29.getIcon());
                     break;
                 case 8:
                     jLabel60.setText("6");
                     jLabel62.setText("7");
                     times.get(3).setVencedor(jLabel8.getText());
+                    times.get(3).setEscudo(jLabel39.getIcon());
                     break;
                 case 9:
                     jLabel60.setText("3");
                     jLabel62.setText("0");
                     times.get(3).setVencedor(jLabel7.getText());
+                    times.get(3).setEscudo(jLabel29.getIcon());
                     break;
                 case 10:
                     jLabel60.setText("0");
                     jLabel62.setText("3");
                     times.get(3).setVencedor(jLabel8.getText());
+                    times.get(3).setEscudo(jLabel39.getIcon());
                     break;
             }
         }
@@ -1957,51 +1996,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel57.setText("5");
                     jLabel59.setText("4");
                     times.get(4).setVencedor(jLabel9.getText());
+                    times.get(4).setEscudo(jLabel30.getIcon());
                     break;
                 case 2:
                     jLabel57.setText("4");
                     jLabel59.setText("5");
                     times.get(4).setVencedor(jLabel10.getText());
+                    times.get(4).setEscudo(jLabel38.getIcon());
                     break;
                 case 3:
                     jLabel57.setText("6");
                     jLabel59.setText("5");
                     times.get(4).setVencedor(jLabel9.getText());
+                    times.get(4).setEscudo(jLabel30.getIcon());
                     break;
                 case 4:
                     jLabel57.setText("5");
                     jLabel59.setText("6");
                     times.get(4).setVencedor(jLabel10.getText());
+                    times.get(4).setEscudo(jLabel38.getIcon());
                     break;
                 case 5:
                     jLabel57.setText("4");
                     jLabel59.setText("3");
                     times.get(4).setVencedor(jLabel9.getText());
+                    times.get(4).setEscudo(jLabel30.getIcon());
                     break;
                 case 6:
                     jLabel57.setText("3");
                     jLabel59.setText("4");
                     times.get(4).setVencedor(jLabel10.getText());
+                    times.get(4).setEscudo(jLabel38.getIcon());
                     break;
                 case 7:
                     jLabel57.setText("7");
                     jLabel59.setText("6");
                     times.get(4).setVencedor(jLabel9.getText());
+                    times.get(4).setEscudo(jLabel30.getIcon());
                     break;
                 case 8:
                     jLabel57.setText("6");
                     jLabel59.setText("7");
                     times.get(4).setVencedor(jLabel10.getText());
+                    times.get(4).setEscudo(jLabel38.getIcon());
                     break;
                 case 9:
                     jLabel57.setText("3");
                     jLabel59.setText("0");
                     times.get(4).setVencedor(jLabel9.getText());
+                    times.get(4).setEscudo(jLabel30.getIcon());
                     break;
                 case 10:
                     jLabel57.setText("0");
                     jLabel59.setText("3");
                     times.get(4).setVencedor(jLabel10.getText());
+                    times.get(4).setEscudo(jLabel38.getIcon());
                     break;
             }
         }
@@ -2015,52 +2064,62 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel54.setText("5");
                     jLabel56.setText("4");
                     times.get(5).setVencedor(jLabel11.getText());
+                    times.get(5).setEscudo(jLabel31.getIcon());
                     break;
                 case 2:
                     jLabel54.setText("4");
                     jLabel56.setText("5");
                     times.get(5).setVencedor(jLabel12.getText());
+                    times.get(5).setEscudo(jLabel37.getIcon());
                     break;
                 case 3:
                     jLabel54.setText("6");
                     jLabel56.setText("5");
                     times.get(5).setVencedor(jLabel11.getText());
+                    times.get(5).setEscudo(jLabel31.getIcon());
 
                     break;
                 case 4:
                     jLabel54.setText("5");
                     jLabel56.setText("6");
                     times.get(5).setVencedor(jLabel12.getText());
+                    times.get(5).setEscudo(jLabel37.getIcon());
                     break;
                 case 5:
                     jLabel54.setText("4");
                     jLabel56.setText("3");
                     times.get(5).setVencedor(jLabel11.getText());
+                    times.get(5).setEscudo(jLabel31.getIcon());
                     break;
                 case 6:
                     jLabel54.setText("3");
                     jLabel56.setText("4");
                     times.get(5).setVencedor(jLabel12.getText());
+                    times.get(5).setEscudo(jLabel37.getIcon());
                     break;
                 case 7:
                     jLabel54.setText("7");
                     jLabel56.setText("6");
                     times.get(5).setVencedor(jLabel11.getText());
+                    times.get(5).setEscudo(jLabel31.getIcon());
                     break;
                 case 8:
                     jLabel54.setText("6");
                     jLabel56.setText("7");
                     times.get(5).setVencedor(jLabel12.getText());
+                    times.get(5).setEscudo(jLabel37.getIcon());
                     break;
                 case 9:
                     jLabel54.setText("3");
                     jLabel56.setText("0");
                     times.get(5).setVencedor(jLabel11.getText());
+                    times.get(5).setEscudo(jLabel31.getIcon());
                     break;
                 case 10:
                     jLabel54.setText("0");
                     jLabel56.setText("3");
                     times.get(5).setVencedor(jLabel12.getText());
+                    times.get(5).setEscudo(jLabel37.getIcon());
                     break;
             }
         }
@@ -2074,51 +2133,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel51.setText("5");
                     jLabel53.setText("4");
                     times.get(6).setVencedor(jLabel13.getText());
+                    times.get(6).setEscudo(jLabel32.getIcon());
                     break;
                 case 2:
                     jLabel51.setText("4");
                     jLabel53.setText("5");
                     times.get(6).setVencedor(jLabel14.getText());
+                    times.get(6).setEscudo(jLabel36.getIcon());
                     break;
                 case 3:
                     jLabel51.setText("6");
                     jLabel53.setText("5");
                     times.get(6).setVencedor(jLabel13.getText());
+                    times.get(6).setEscudo(jLabel32.getIcon());
                     break;
                 case 4:
                     jLabel51.setText("5");
                     jLabel53.setText("6");
                     times.get(6).setVencedor(jLabel14.getText());
+                    times.get(6).setEscudo(jLabel36.getIcon());
                     break;
                 case 5:
                     jLabel51.setText("4");
                     jLabel53.setText("3");
                     times.get(6).setVencedor(jLabel13.getText());
+                    times.get(6).setEscudo(jLabel32.getIcon());
                     break;
                 case 6:
                     jLabel51.setText("3");
                     jLabel53.setText("4");
                     times.get(6).setVencedor(jLabel14.getText());
+                    times.get(6).setEscudo(jLabel36.getIcon());
                     break;
                 case 7:
                     jLabel51.setText("7");
                     jLabel53.setText("6");
                     times.get(6).setVencedor(jLabel13.getText());
+                    times.get(6).setEscudo(jLabel32.getIcon());
                     break;
                 case 8:
                     jLabel51.setText("6");
                     jLabel53.setText("7");
                     times.get(6).setVencedor(jLabel14.getText());
+                    times.get(6).setEscudo(jLabel36.getIcon());
                     break;
                 case 9:
                     jLabel51.setText("3");
                     jLabel53.setText("0");
                     times.get(6).setVencedor(jLabel13.getText());
+                    times.get(6).setEscudo(jLabel32.getIcon());
                     break;
                 case 10:
                     jLabel51.setText("0");
                     jLabel53.setText("3");
                     times.get(6).setVencedor(jLabel14.getText());
+                    times.get(6).setEscudo(jLabel36.getIcon());
                     break;
             }
         }
@@ -2132,51 +2201,61 @@ public class Oitavas extends javax.swing.JFrame {
                     jLabel48.setText("5");
                     jLabel50.setText("4");
                     times.get(7).setVencedor(jLabel15.getText());
+                    times.get(7).setEscudo(jLabel33.getIcon());
                     break;
                 case 2:
                     jLabel48.setText("4");
                     jLabel50.setText("5");
                     times.get(7).setVencedor(jLabel16.getText());
+                    times.get(7).setEscudo(jLabel35.getIcon());
                     break;
                 case 3:
                     jLabel48.setText("6");
                     jLabel50.setText("5");
                     times.get(7).setVencedor(jLabel15.getText());
+                    times.get(7).setEscudo(jLabel33.getIcon());
                     break;
                 case 4:
                     jLabel48.setText("5");
                     jLabel50.setText("6");
                     times.get(7).setVencedor(jLabel16.getText());
+                    times.get(7).setEscudo(jLabel35.getIcon());
                     break;
                 case 5:
                     jLabel48.setText("4");
                     jLabel50.setText("3");
                     times.get(7).setVencedor(jLabel15.getText());
+                    times.get(7).setEscudo(jLabel33.getIcon());
                     break;
                 case 6:
                     jLabel48.setText("3");
                     jLabel50.setText("4");
                     times.get(7).setVencedor(jLabel16.getText());
+                    times.get(7).setEscudo(jLabel35.getIcon());
                     break;
                 case 7:
                     jLabel48.setText("7");
                     jLabel50.setText("6");
                     times.get(7).setVencedor(jLabel15.getText());
+                    times.get(7).setEscudo(jLabel33.getIcon());
                     break;
                 case 8:
                     jLabel48.setText("6");
                     jLabel50.setText("7");
                     times.get(7).setVencedor(jLabel16.getText());
+                    times.get(7).setEscudo(jLabel35.getIcon());
                     break;
                 case 9:
                     jLabel48.setText("3");
                     jLabel50.setText("0");
                     times.get(7).setVencedor(jLabel15.getText());
+                    times.get(7).setEscudo(jLabel33.getIcon());
                     break;
                 case 10:
                     jLabel48.setText("0");
                     jLabel50.setText("3");
                     times.get(7).setVencedor(jLabel16.getText());
+                    times.get(7).setEscudo(jLabel35.getIcon());
                     break;
 
             }
@@ -2190,53 +2269,60 @@ public class Oitavas extends javax.swing.JFrame {
     public void timeVencedor(ArrayList<Placar> placares, ArrayList<Time> times) throws IOException {
         if (placares.get(0).getPlacarVisitante() > placares.get(0).getPlacarCasa()) {
             times.get(0).setVencedor(jLabel1.getText());
+            times.get(0).setEscudo(jLabel26.getIcon());
         } else if (placares.get(0).getPlacarVisitante() < placares.get(0).getPlacarCasa()) {
             times.get(0).setVencedor(jLabel2.getText());
+            times.get(0).setEscudo(jLabel3.getIcon());
         }
         if (placares.get(1).getPlacarVisitante() > placares.get(1).getPlacarCasa()) {
             times.get(1).setVencedor(time1jLabel.getText());
+            times.get(1).setEscudo(jLabel27.getIcon());
         } else if (placares.get(1).getPlacarVisitante() < placares.get(1).getPlacarCasa()) {
             times.get(1).setVencedor(jLabel4.getText());
+            times.get(1).setEscudo(jLabel34.getIcon());
         }
         if (placares.get(2).getPlacarVisitante() > placares.get(2).getPlacarCasa()) {
             times.get(2).setVencedor(jLabel5.getText());
+            times.get(2).setEscudo(jLabel28.getIcon());
         } else if (placares.get(2).getPlacarVisitante() < placares.get(2).getPlacarCasa()) {
             times.get(2).setVencedor(jLabel40.getText());
+            times.get(2).setEscudo(jLabel25.getIcon());
         }
         if (placares.get(3).getPlacarVisitante() > placares.get(3).getPlacarCasa()) {
             times.get(3).setVencedor(jLabel7.getText());
+            times.get(3).setEscudo(jLabel29.getIcon());
         } else if (placares.get(3).getPlacarVisitante() < placares.get(3).getPlacarCasa()) {
             times.get(3).setVencedor(jLabel8.getText());
+             times.get(3).setEscudo(jLabel39.getIcon());
         }
         if (placares.get(4).getPlacarVisitante() > placares.get(4).getPlacarCasa()) {
             times.get(4).setVencedor(jLabel9.getText());
+             times.get(4).setEscudo(jLabel30.getIcon());
         } else if (placares.get(4).getPlacarVisitante() < placares.get(4).getPlacarCasa()) {
             times.get(4).setVencedor(jLabel10.getText());
+            times.get(4).setEscudo(jLabel38.getIcon());
         }
         if (placares.get(5).getPlacarVisitante() > placares.get(5).getPlacarCasa()) {
             times.get(5).setVencedor(jLabel11.getText());
+            times.get(5).setEscudo(jLabel31.getIcon());
         } else if (placares.get(5).getPlacarVisitante() < placares.get(5).getPlacarCasa()) {
             times.get(5).setVencedor(jLabel12.getText());
+            times.get(5).setEscudo(jLabel37.getIcon());
         }
         if (placares.get(6).getPlacarVisitante() > placares.get(6).getPlacarCasa()) {
             times.get(6).setVencedor(jLabel13.getText());
+            times.get(6).setEscudo(jLabel32.getIcon());
         } else if (placares.get(6).getPlacarVisitante() < placares.get(6).getPlacarCasa()) {
             times.get(6).setVencedor(jLabel14.getText());
+            times.get(6).setEscudo(jLabel36.getIcon());
         }
         if (placares.get(7).getPlacarVisitante() > placares.get(7).getPlacarCasa()) {
             times.get(7).setVencedor(jLabel15.getText());
+            times.get(7).setEscudo(jLabel33.getIcon());
         } else if (placares.get(7).getPlacarVisitante() < placares.get(7).getPlacarCasa()) {
             times.get(7).setVencedor(jLabel16.getText());
+            times.get(7).setEscudo(jLabel35.getIcon());
         }
-
-        System.out.println(times.get(0).getVencedor());
-        System.out.println(times.get(1).getVencedor());
-        System.out.println(times.get(2).getVencedor());
-        System.out.println(times.get(3).getVencedor());
-        System.out.println(times.get(4).getVencedor());
-        System.out.println(times.get(5).getVencedor());
-        System.out.println(times.get(6).getVencedor());
-        System.out.println(times.get(7).getVencedor());
         quartas.vencedoresOitavas(placares, times);
     }
 

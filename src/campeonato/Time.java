@@ -1,11 +1,13 @@
 package campeonato;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 public class Time {
 
     private String nome;
     private ImageIcon emblema;
+    private Icon escudo;
     private String vencedor;
     
     public Time(){
@@ -51,6 +53,20 @@ public class Time {
      */
     public void setVencedor(String vencedor) {
         this.vencedor = vencedor;
+    }
+
+    /**
+     * @return the escudo
+     */
+    public Icon getEscudo() {
+        return escudo;
+    }
+
+    /**
+     * @param escudo the escudo to set
+     */
+    public void setEscudo(Icon escudo) {
+        this.escudo = escudo;
     }
 
 }
