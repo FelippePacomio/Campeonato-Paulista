@@ -13,19 +13,19 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-public class Semi extends javax.swing.JFrame {
-
-    Final finaltela = new Final();
+public class Final extends javax.swing.JFrame {
+    
+    Vencedor vencedor = new Vencedor();
     ArrayList<Time> times;
     ImageIcon atleticosorocaba, botafogo, cotia, corinthians, ferroviaria, audax, guarani, interlimeira,
             ituano, marilia, mirassol, oeste, palmeiras, pontepreta, bragantino, santoandre, santos, saobernardo, saocaetano,
             saopaulo, piracicaba, aguasanta;
-
-    public Semi() throws IOException {
+    
+    public Final() throws IOException {
         lerEscudos();
         initComponents();
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -49,22 +49,6 @@ public class Semi extends javax.swing.JFrame {
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
-        jPanel25 = new javax.swing.JPanel();
-        jLabel14 = new javax.swing.JLabel();
-        jPanel32 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jPanel41 = new javax.swing.JPanel();
-        jPanel48 = new javax.swing.JPanel();
-        jPanel55 = new javax.swing.JPanel();
-        jPanel64 = new javax.swing.JPanel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jPanel58 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
@@ -255,162 +239,6 @@ public class Semi extends javax.swing.JFrame {
 
         jLayeredPane1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 1280, 80));
 
-        jPanel7.setBackground(new java.awt.Color(87, 87, 87));
-        jPanel7.setOpaque(false);
-        jPanel7.setPreferredSize(new java.awt.Dimension(800, 600));
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel13.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 16)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("jLabel1");
-        jLabel13.setToolTipText("");
-        jLabel13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jLabel13.setInheritsPopupMenu(false);
-        jPanel7.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 410, -1));
-
-        jLabel32.setText("jLabel32");
-        jPanel7.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 7, -1, -1));
-
-        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("jLabel36");
-        jPanel7.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 7, -1, -1));
-
-        jPanel18.setBackground(new java.awt.Color(51, 0, 153));
-        jPanel18.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 406, Short.MAX_VALUE)
-        );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 21, Short.MAX_VALUE)
-        );
-
-        jPanel7.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 28, 410, 25));
-
-        jPanel25.setBackground(new java.awt.Color(51, 0, 153));
-        jPanel25.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jLabel14.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 16)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("jLabel2");
-
-        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
-        jPanel25.setLayout(jPanel25Layout);
-        jPanel25Layout.setHorizontalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 446, Short.MAX_VALUE)
-        );
-        jPanel25Layout.setVerticalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel25Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel14))
-        );
-
-        jPanel7.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 28, 450, 25));
-
-        jPanel32.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel23.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 18)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(51, 0, 153));
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("X");
-        jLabel23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
-        jPanel32.setLayout(jPanel32Layout);
-        jPanel32Layout.setHorizontalGroup(
-            jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel32Layout.createSequentialGroup()
-                .addGap(0, 20, Short.MAX_VALUE)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel32Layout.setVerticalGroup(
-            jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel32Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel7.add(jPanel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 28, 230, 25));
-
-        jPanel41.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
-        jPanel41.setLayout(jPanel41Layout);
-        jPanel41Layout.setHorizontalGroup(
-            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-        jPanel41Layout.setVerticalGroup(
-            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
-        );
-
-        jPanel7.add(jPanel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 48, 450, 8));
-
-        jPanel48.setBackground(new java.awt.Color(51, 0, 153));
-
-        javax.swing.GroupLayout jPanel48Layout = new javax.swing.GroupLayout(jPanel48);
-        jPanel48.setLayout(jPanel48Layout);
-        jPanel48Layout.setHorizontalGroup(
-            jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 233, Short.MAX_VALUE)
-        );
-        jPanel48Layout.setVerticalGroup(
-            jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
-        );
-
-        jPanel7.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 48, 233, 8));
-
-        jPanel55.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel55Layout = new javax.swing.GroupLayout(jPanel55);
-        jPanel55.setLayout(jPanel55Layout);
-        jPanel55Layout.setHorizontalGroup(
-            jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
-        );
-        jPanel55Layout.setVerticalGroup(
-            jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
-        );
-
-        jPanel7.add(jPanel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 48, 410, 8));
-
-        jPanel64.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel64.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel64.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel51.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(51, 0, 153));
-        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel51.setText("PN");
-        jPanel64.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 100, 20));
-
-        jLabel52.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
-        jLabel52.setForeground(new java.awt.Color(51, 0, 153));
-        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel52.setText("PN");
-        jPanel64.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
-
-        jLabel53.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(51, 0, 153));
-        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel53.setText("PN");
-        jPanel64.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 20));
-
-        jPanel7.add(jPanel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 60, 110, 22));
-
-        jLayeredPane1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 1280, 80));
-
         jPanel9.setOpaque(false);
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jLayeredPane1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 800, 1280, 50));
@@ -444,7 +272,7 @@ public class Semi extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 20)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("SEMI-FINAL");
+        jLabel6.setText("FINAL");
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
@@ -483,7 +311,7 @@ public class Semi extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        finaltela.setVisible(true);
+        vencedor.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -534,7 +362,7 @@ public class Semi extends javax.swing.JFrame {
         aguasanta = new ImageIcon(img21);
         criarTimes();
     }
-
+    
     private void criarTimes() throws IOException {
         times = new ArrayList();
         times.add(new Time("Atlético Sorocaba", atleticosorocaba));
@@ -561,223 +389,139 @@ public class Semi extends javax.swing.JFrame {
         times.add(new Time("Água Santa", aguasanta));
         Collections.shuffle(times);
     }
-
-    public void vencedoresQuartas(ArrayList<Placar> placares, ArrayList<Time> times) throws IOException {
-
-        jLabel13.setText(times.get(0).getVencedor());
-        jLabel32.setIcon(times.get(0).getEscudo());
-        jLabel32.setText("");
-
-        jLabel14.setText(times.get(1).getVencedor());
-        jLabel36.setIcon(times.get(1).getEscudo());
-        jLabel36.setText("");
-
-        jLabel11.setText(times.get(2).getVencedor());
-        jLabel31.setIcon(times.get(2).getEscudo());
+    
+    public void vencedoresSemi(ArrayList<Placar> placares, ArrayList<Time> times) throws IOException {
+        
+        jLabel11.setText(times.get(0).getVencedor());
+        jLabel31.setIcon(times.get(0).getEscudo());
         jLabel31.setText("");
-
-        jLabel12.setText(times.get(3).getVencedor());
-        jLabel37.setIcon(times.get(3).getEscudo());
+        
+        jLabel12.setText(times.get(1).getVencedor());
+        jLabel37.setIcon(times.get(1).getEscudo());
         jLabel37.setText("");
-
+        
         placarAleatorio();
     }
-
+    
     public void placarAleatorio() throws IOException {
         int escolha = 0;
         ArrayList<Placar> placares = new ArrayList<Placar>();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             Placar placar = new Placar();
             placares.add(placar);
         }
-
-        jLabel23.setText(String.valueOf(placares.get(0).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(0).getPlacarCasa()));
-        jLabel22.setText(String.valueOf(placares.get(1).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(1).getPlacarCasa()));
-
-        jPanel64.setVisible(false);
+        
+        jLabel22.setText(String.valueOf(placares.get(0).getPlacarVisitante()) + "    x    " + String.valueOf(placares.get(0).getPlacarCasa()));
+        
         jPanel65.setVisible(false);
-
+        
         placarPenaltis(placares, escolha);
-
+        
     }
-
+    
     public void placarPenaltis(ArrayList<Placar> placares, int escolha) throws IOException {
         Random random = new Random();
         ArrayList<Time> times = new ArrayList<Time>();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             Time time = new Time();
             times.add(time);
         }
-
-        if (placares.get(1).getPlacarVisitante() == placares.get(1).getPlacarCasa()) {
+        
+        if (placares.get(0).getPlacarVisitante() == placares.get(0).getPlacarCasa()) {
             jPanel65.setVisible(true);
             escolha = random.nextInt(9) + 1;
-
+            
             switch (escolha) {
                 case 1:
                     jLabel54.setText("5");
                     jLabel56.setText("4");
-                    times.get(1).setVencedor(jLabel11.getText());
-                    times.get(1).setEscudo(jLabel31.getIcon());
+                    times.get(0).setVencedor(jLabel11.getText());
+                    times.get(0).setEscudo(jLabel31.getIcon());
                     break;
                 case 2:
                     jLabel54.setText("4");
                     jLabel56.setText("5");
-                    times.get(1).setVencedor(jLabel12.getText());
-                    times.get(1).setEscudo(jLabel37.getIcon());
+                    times.get(0).setVencedor(jLabel12.getText());
+                    times.get(0).setEscudo(jLabel37.getIcon());
                     break;
                 case 3:
                     jLabel54.setText("6");
                     jLabel56.setText("5");
-                    times.get(1).setVencedor(jLabel11.getText());
-                    times.get(1).setEscudo(jLabel31.getIcon());
+                    times.get(0).setVencedor(jLabel11.getText());
+                    times.get(0).setEscudo(jLabel31.getIcon());
                     break;
                 case 4:
                     jLabel54.setText("5");
                     jLabel56.setText("6");
-                    times.get(1).setVencedor(jLabel12.getText());
-                    times.get(1).setEscudo(jLabel37.getIcon());
+                    times.get(0).setVencedor(jLabel12.getText());
+                    times.get(0).setEscudo(jLabel37.getIcon());
                     break;
                 case 5:
                     jLabel54.setText("4");
                     jLabel56.setText("3");
-                    times.get(1).setVencedor(jLabel11.getText());
-                    times.get(1).setEscudo(jLabel31.getIcon());
+                    times.get(0).setVencedor(jLabel11.getText());
+                    times.get(0).setEscudo(jLabel31.getIcon());
                     break;
                 case 6:
                     jLabel54.setText("3");
                     jLabel56.setText("4");
-                    times.get(1).setVencedor(jLabel12.getText());
-                    times.get(1).setEscudo(jLabel37.getIcon());
+                    times.get(0).setVencedor(jLabel12.getText());
+                    times.get(0).setEscudo(jLabel37.getIcon());
                     break;
                 case 7:
                     jLabel54.setText("7");
                     jLabel56.setText("6");
-                    times.get(1).setVencedor(jLabel11.getText());
-                    times.get(1).setEscudo(jLabel31.getIcon());
+                    times.get(0).setVencedor(jLabel11.getText());
+                    times.get(0).setEscudo(jLabel31.getIcon());
                     break;
                 case 8:
                     jLabel54.setText("6");
                     jLabel56.setText("7");
-                    times.get(1).setVencedor(jLabel12.getText());
-                    times.get(1).setEscudo(jLabel37.getIcon());
+                    times.get(0).setVencedor(jLabel12.getText());
+                    times.get(0).setEscudo(jLabel37.getIcon());
                     break;
                 case 9:
                     jLabel54.setText("3");
                     jLabel56.setText("0");
-                    times.get(1).setVencedor(jLabel11.getText());
-                    times.get(1).setEscudo(jLabel31.getIcon());
+                    times.get(0).setVencedor(jLabel11.getText());
+                    times.get(0).setEscudo(jLabel31.getIcon());
                     break;
                 case 10:
                     jLabel54.setText("0");
                     jLabel56.setText("3");
-                    times.get(1).setVencedor(jLabel12.getText());
-                    times.get(1).setEscudo(jLabel37.getIcon());
+                    times.get(0).setVencedor(jLabel12.getText());
+                    times.get(0).setEscudo(jLabel37.getIcon());
                     break;
             }
-        }
-
-        if (placares.get(0).getPlacarVisitante() == placares.get(0).getPlacarCasa()) {
-            jPanel64.setVisible(true);
-            escolha = random.nextInt(9) + 1;
-
-            switch (escolha) {
-                case 1:
-                    jLabel51.setText("5");
-                    jLabel53.setText("4");
-                    times.get(0).setVencedor(jLabel13.getText());
-                    times.get(0).setEscudo(jLabel32.getIcon());
-                    break;
-                case 2:
-                    jLabel51.setText("4");
-                    jLabel53.setText("5");
-                    times.get(0).setVencedor(jLabel14.getText());
-                    times.get(0).setEscudo(jLabel36.getIcon());
-                    break;
-                case 3:
-                    jLabel51.setText("6");
-                    jLabel53.setText("5");
-                    times.get(0).setVencedor(jLabel13.getText());
-                    times.get(0).setEscudo(jLabel32.getIcon());
-                    break;
-                case 4:
-                    jLabel51.setText("5");
-                    jLabel53.setText("6");
-                    times.get(0).setVencedor(jLabel14.getText());
-                    times.get(0).setEscudo(jLabel36.getIcon());
-                    break;
-                case 5:
-                    jLabel51.setText("4");
-                    jLabel53.setText("3");
-                    times.get(0).setVencedor(jLabel13.getText());
-                    times.get(0).setEscudo(jLabel32.getIcon());
-                    break;
-                case 6:
-                    jLabel51.setText("3");
-                    jLabel53.setText("4");
-                    times.get(0).setVencedor(jLabel14.getText());
-                    times.get(0).setEscudo(jLabel36.getIcon());
-                    break;
-                case 7:
-                    jLabel51.setText("7");
-                    jLabel53.setText("6");
-                    times.get(0).setVencedor(jLabel13.getText());
-                    times.get(0).setEscudo(jLabel32.getIcon());
-                    break;
-                case 8:
-                    jLabel51.setText("6");
-                    jLabel53.setText("7");
-                    times.get(0).setVencedor(jLabel14.getText());
-                    times.get(0).setEscudo(jLabel36.getIcon());
-                    break;
-                case 9:
-                    jLabel51.setText("3");
-                    jLabel53.setText("0");
-                    times.get(0).setVencedor(jLabel13.getText());
-                    times.get(0).setEscudo(jLabel32.getIcon());
-                    break;
-                case 10:
-                    jLabel51.setText("0");
-                    jLabel53.setText("3");
-                    times.get(0).setVencedor(jLabel14.getText());
-                    times.get(0).setEscudo(jLabel36.getIcon());
-                    break;
-            }
-
+            
         } else {
         }
         timeVencedor(placares, times);
     }
-
+    
     public void timeVencedor(ArrayList<Placar> placares, ArrayList<Time> times) throws IOException {
-
+        
         if (placares.get(0).getPlacarVisitante() > placares.get(0).getPlacarCasa()) {
-            times.get(0).setVencedor(jLabel13.getText());
-            times.get(0).setEscudo(jLabel32.getIcon());
+            times.get(0).setVencedor(jLabel11.getText());
+            times.get(0).setEscudo(jLabel31.getIcon());
         } else if (placares.get(0).getPlacarVisitante() < placares.get(0).getPlacarCasa()) {
-            times.get(0).setVencedor(jLabel14.getText());
-            times.get(0).setEscudo(jLabel36.getIcon());
+            times.get(0).setVencedor(jLabel12.getText());
+            times.get(0).setEscudo(jLabel37.getIcon());
         }
-        if (placares.get(1).getPlacarVisitante() > placares.get(1).getPlacarCasa()) {
-            times.get(1).setVencedor(jLabel11.getText());
-            times.get(1).setEscudo(jLabel31.getIcon());
-        } else if (placares.get(1).getPlacarVisitante() < placares.get(1).getPlacarCasa()) {
-            times.get(1).setVencedor(jLabel12.getText());
-            times.get(1).setEscudo(jLabel37.getIcon());
-        }
-
-        finaltela.vencedoresSemi(placares, times);
+        
+        System.out.println(times.get(0).getVencedor());
+        vencedor.timeVencedor(placares, times);
     }
-
+    
     public static void main(String args[]) {
-
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    new Semi().setVisible(true);
-
+                    new Final().setVisible(true);
+                    
                 } catch (IOException ex) {
-                    Logger.getLogger(Semi.class
+                    Logger.getLogger(Final.class
                             .getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -789,42 +533,26 @@ public class Semi extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     public javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    public javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel31;
-    private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel41;
     private javax.swing.JPanel jPanel47;
-    private javax.swing.JPanel jPanel48;
     private javax.swing.JPanel jPanel54;
-    private javax.swing.JPanel jPanel55;
     private javax.swing.JPanel jPanel58;
     private javax.swing.JPanel jPanel59;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel61;
-    private javax.swing.JPanel jPanel64;
     private javax.swing.JPanel jPanel65;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel wallpaperjLabel;

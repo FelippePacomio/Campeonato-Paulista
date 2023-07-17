@@ -17,6 +17,7 @@ import javax.swing.ImageIcon;
 
 public class Quartas extends javax.swing.JFrame {
 
+    Semi semi = new Semi();
     ArrayList<Time> times;
     ImageIcon atleticosorocaba, botafogo, cotia, corinthians, ferroviaria, audax, guarani, interlimeira,
             ituano, marilia, mirassol, oeste, palmeiras, pontepreta, bragantino, santoandre, santos, saobernardo, saocaetano,
@@ -815,6 +816,11 @@ public class Quartas extends javax.swing.JFrame {
         jButton1.setText("AVANÇAR >");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jLayeredPane1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 730, 120, 30));
 
         jScrollPane1.setViewportView(jLayeredPane1);
@@ -824,6 +830,11 @@ public class Quartas extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        semi.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
 
     private void lerEscudos() throws IOException {
         BufferedImage img = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Atlético_Sorocaba-SP.png"));
@@ -1268,12 +1279,7 @@ public class Quartas extends javax.swing.JFrame {
             times.get(3).setVencedor(jLabel10.getText());
             times.get(3).setEscudo(jLabel38.getIcon());
         }
-
-        System.out.println(times.get(0).getVencedor());
-        System.out.println(times.get(1).getVencedor());
-        System.out.println(times.get(2).getVencedor());
-        System.out.println(times.get(3).getVencedor());
-
+        semi.vencedoresQuartas(placares, times);
     }
 
     public static void main(String args[]) {
