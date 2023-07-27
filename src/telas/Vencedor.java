@@ -78,7 +78,7 @@ public class Vencedor extends javax.swing.JFrame {
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("jLabel1");
-        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, 200, -1));
+        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 350, 200, -1));
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/golden-volumetric-3d-text-of-the-inscription-congratulations-isolated-cut-out-png.png"))); // NOI18N
@@ -89,7 +89,7 @@ public class Vencedor extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("jLabel4");
-        jLayeredPane1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 450, 200, -1));
+        jLayeredPane1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 430, 200, -1));
 
         jButton1.setBackground(new java.awt.Color(144, 69, 5));
         jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
