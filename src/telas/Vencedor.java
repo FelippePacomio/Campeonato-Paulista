@@ -29,12 +29,16 @@ public class Vencedor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         wallpaperjLabel = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
@@ -42,13 +46,19 @@ public class Vencedor extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1300, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jScrollPane1.setBackground(new java.awt.Color(51, 0, 153));
+        jScrollPane1.setForeground(new java.awt.Color(51, 0, 153));
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane1.setHorizontalScrollBar(null);
+
         jLayeredPane1.setBackground(new java.awt.Color(255, 0, 51));
         jLayeredPane1.setMinimumSize(new java.awt.Dimension(1280, 720));
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(1280, 800));
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         wallpaperjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        wallpaperjLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pxfuel.jpg"))); // NOI18N
+        wallpaperjLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pxfuel2.jpg"))); // NOI18N
         wallpaperjLabel.setText("\n");
         wallpaperjLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         wallpaperjLabel.setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -62,17 +72,58 @@ public class Vencedor extends javax.swing.JFrame {
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Paulistão_sicred_2023 (1).png"))); // NOI18N
         jLayeredPane1.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, 64));
 
-        jLabel1.setText("jLabel1");
-        jLayeredPane1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 380, -1, -1));
-
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/trophy.gif"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jLayeredPane1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, -1, -1));
+        jLayeredPane1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, 170, 150));
 
-        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("jLabel1");
+        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, 200, -1));
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/golden-volumetric-3d-text-of-the-inscription-congratulations-isolated-cut-out-png.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        jLayeredPane1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("jLabel4");
+        jLayeredPane1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 450, 200, -1));
+
+        jButton1.setBackground(new java.awt.Color(144, 69, 5));
+        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("SAIR >");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 730, 120, 30));
+
+        jScrollPane1.setViewportView(jLayeredPane1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 730));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void lerEscudos() throws IOException {
         BufferedImage img = ImageIO.read(new File("C:\\Users\\felip\\OneDrive\\Documentos\\NetBeansProjects\\Campeonato-Paulista\\src\\escudos\\Atlético_Sorocaba-SP.png"));
@@ -151,9 +202,10 @@ public class Vencedor extends javax.swing.JFrame {
 
     public void timeVencedor(ArrayList<Placar> placares, ArrayList<Time> times) throws IOException {
 
-        jLabel2.setText(times.get(0).getVencedor());
-        jLabel1.setIcon(times.get(0).getEscudo());
-        jLabel1.setText("");
+        jLabel6.setText(times.get(0).getVencedor());
+        jLabel3.setIcon(times.get(0).getEscudo());
+        jLabel3.setText("");
+         jLabel5.setText("");
     }
 
     public static void main(String args[]) {
@@ -173,11 +225,15 @@ public class Vencedor extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel wallpaperjLabel;
     // End of variables declaration//GEN-END:variables
 }
